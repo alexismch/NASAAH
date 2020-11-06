@@ -32,6 +32,55 @@ namespace Script.Manager{
         public static void SetEffect(string effect)
         {
             Debug.Log(effect);
+            switch (effect)
+            {
+                case "SpeedBoost":
+                    changeSpeed(1);
+                    break;
+                case "SpeedDebuf":
+                    changeSpeed(-1);
+                    break;
+                case "ForceBoost":
+                    changeForce(1);
+                    break;
+                case "ForceDebuf":
+                    changeForce(-1);
+                    break;
+                case "Invincibility":
+                    invincibility();
+                    break;
+                case "Invisibility":
+                    invisibility();
+                    break;
+                case "InstantDie":
+                    kill();
+                    break;
+            }
+        }
+
+        private static void kill()
+        {
+            Debug.Log("Kill");
+        }
+
+        private static void invisibility()
+        {
+            Debug.Log("Invisible");
+        }
+
+        private static void invincibility()
+        {
+            Debug.Log("Invincible");
+        }
+
+        private static void changeForce(int value)
+        {
+            Debug.Log("Force " + value);
+        }
+
+        private static void changeSpeed(int value)
+        {
+            Debug.Log("Speed " + value);
         }
     }
 }
