@@ -37,7 +37,6 @@ namespace Script.Controllers
 
         private void OnTriggerEnter2D(Collider2D other)
         {
-            Debug.Log("Hello");
             isInPatrol = false;
             moveToTarget.SetTarget(gameManager.Player);
         }

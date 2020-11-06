@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using Script.Manager;
 using UnityEngine;
 
 namespace Script.Controllers
@@ -7,7 +8,7 @@ namespace Script.Controllers
     public class TurretController : MonoBehaviour
     {
         [SerializeField] private MoveToTarget moveToTarget;
-        [SerializeField] private GameManager.GameManager gameManager;
+        [SerializeField] private GameManager gameManager;
         [SerializeField] private float rotationSpeed;
         [SerializeField] private float maxAngleRotation;
 
