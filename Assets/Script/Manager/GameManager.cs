@@ -58,7 +58,7 @@ namespace Script.Manager{
             }
         }
 
-        private static void Kill()
+        public static void Kill()
         {
             Debug.Log("Kill");
         }
