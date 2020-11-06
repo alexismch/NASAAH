@@ -28,7 +28,11 @@ namespace Script.Manager{
             SceneManager.LoadScene(sceneName);
             var asyncload = SceneManager.LoadSceneAsync(sceneName);
         }
-        
+
+        public static void SetEffect(string effect)
+        {
+            //
+        }
     }
 }
 
