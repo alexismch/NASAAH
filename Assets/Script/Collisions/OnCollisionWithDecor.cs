@@ -12,10 +12,10 @@ namespace Script.Collisions
 
         private void Awake()
         {
-            _dynamicMovement = GetComponent<DynamicMovement>();
+            _dynamicMovement = GetComponentInParent<DynamicMovement>();
         }
 
-        private void OnCollisionEnter2D(Collision2D other)
+        private void OnTriggerEnter2D(Collider2D other)
         {
             if ((layerMask & 1 << other.gameObject.layer) == 1 << other.gameObject.layer)
             {
@@ -23,7 +23,7 @@ namespace Script.Collisions
             }
         }
 
-        private void OnCollisionExit2D(Collision2D other)
+        private void OnTriggerExit2D(Collider2D other)
         {
             if ((layerMask & 1 << other.gameObject.layer) == 1 << other.gameObject.layer)
             {
