@@ -4,16 +4,14 @@ namespace Script.Controllers
 {
     public class PlayerController : MonoBehaviour
     {
-        // Start is called before the first frame update
-        void Start()
-        {
-        
-        }
+        [SerializeField] Movement movement;
 
         // Update is called once per frame
         void Update()
         {
-        
+            var hInput = Input.GetAxisRaw("Horizontal");
+            var vInput = Input.GetAxisRaw("Vertical");
+            movement.Move(hInput, vInput);
         }
     }
 }
