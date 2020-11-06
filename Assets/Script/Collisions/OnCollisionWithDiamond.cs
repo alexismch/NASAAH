@@ -1,4 +1,5 @@
-﻿using UnityEngine.Events;
+﻿using Script.Manager;
+using UnityEngine.Events;
 using UnityEngine;
 
 namespace Script.Collisions
@@ -24,8 +25,14 @@ namespace Script.Collisions
 
         public enum Effects
         {
-            
-        }
+            SpeedBoost,
+            SpeedDebuf,
+            ForceBoost,
+            ForceDebuf,
+            Invisibility,
+            Invincibility,
+            InstantDie,
+    }
         
         
     }
