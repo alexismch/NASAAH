@@ -26,8 +26,8 @@ PolygonCollider2D:
   m_Points:
     m_Paths:
     - - {x: 0, y: 1}
-      - {x: -2, y: -6}
-      - {x: 2, y: -6}
+      - {x: -0.66514707, y: -1.7868714}
+      - {x: 0.7277192, y: -1.786871}
 --- !u!114 &218005485
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42,8 +42,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveToTarget: {fileID: 4029684632002896952}
   gameManager: {fileID: 0}
-  rotationSpeed: 0
-  maxAngleRotation: 0
   layerMask:
     serializedVersion: 2
     m_Bits: 512
@@ -72,12 +70,12 @@ PrefabInstance:
     - target: {fileID: 6709343522291829686, guid: 6bfdab959dabb8244beaeeb32595f4c3,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.08456993
+      value: 2.44
       objectReference: {fileID: 0}
     - target: {fileID: 6709343522291829686, guid: 6bfdab959dabb8244beaeeb32595f4c3,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.3085892
+      value: 2.41
       objectReference: {fileID: 0}
     - target: {fileID: 6709343522291829686, guid: 6bfdab959dabb8244beaeeb32595f4c3,
         type: 3}

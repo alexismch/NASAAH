@@ -35,50 +35,50 @@ namespace Script.Manager{
             switch (effect)
             {
                 case "SpeedBoost":
-                    changeSpeed(1);
+                    ChangeSpeed(1);
                     break;
                 case "SpeedDebuf":
-                    changeSpeed(-1);
+                    ChangeSpeed(-1);
                     break;
                 case "ForceBoost":
-                    changeForce(1);
+                    ChangeForce(1);
                     break;
                 case "ForceDebuf":
-                    changeForce(-1);
+                    ChangeForce(-1);
                     break;
                 case "Invincibility":
-                    invincibility();
+                    Invincibility();
                     break;
                 case "Invisibility":
-                    invisibility();
+                    Invisibility();
                     break;
                 case "InstantDie":
-                    kill();
+                    Kill();
                     break;
             }
         }
 
-        private static void kill()
+        private static void Kill()
         {
             Debug.Log("Kill");
         }
 
-        private static void invisibility()
+        private static void Invisibility()
         {
             Debug.Log("Invisible");
         }
 
-        private static void invincibility()
+        private static void Invincibility()
         {
             Debug.Log("Invincible");
         }
 
-        private static void changeForce(int value)
+        private static void ChangeForce(int value)
         {
             Debug.Log("Force " + value);
         }
 
-        private static void changeSpeed(int value)
+        private static void ChangeSpeed(int value)
         {
             Debug.Log("Speed " + value);
         }
