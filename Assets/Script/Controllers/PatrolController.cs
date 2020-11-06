@@ -14,7 +14,8 @@ namespace Script.Controllers
         private int _indexListTarget = 0;
         private Transform _currentTargetTransform;
         private Transform _selfTransform;
-        private Boolean isInPatrol = true;
+        private Boolean _isInPatrol = true;
+        [SerializeField] private LayerMask layerMask;
 
         private void Awake()
         {
@@ -26,7 +27,7 @@ namespace Script.Controllers
 
         private void Update()
         {
-            if (isInPatrol && ((Vector2)(_currentTargetTransform.position - _selfTransform.position)).magnitude <= 2)
+            if (_isInPatrol && ((Vector2)(_currentTargetTransform.position - _selfTransform.position)).magnitude <= 2)
             {
                 _indexListTarget = (_indexListTarget + 1)%targetList.Length;
                 _currentTarget = targetList[_indexListTarget];
@@ -37,8 +38,12 @@ namespace Script.Controllers
 
         private void OnTriggerEnter2D(Collider2D other)
         {
-            isInPatrol = false;
-            moveToTarget.SetTarget(gameManager.Player);
+            if ((layerMask & 1 << other.gameObject.layer) == 1 << other.gameObject.layer)
+            {
+                _isInPatrol = false;
+                moveToTarget.SetTarget(gameManager.Player);
+            }
+            
         }
     }
 }

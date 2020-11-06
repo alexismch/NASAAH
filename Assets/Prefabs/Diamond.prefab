@@ -125,6 +125,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 512
 --- !u!50 &6102831083016481187
 Rigidbody2D:
   serializedVersion: 4

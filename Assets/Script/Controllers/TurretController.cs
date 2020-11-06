@@ -11,6 +11,7 @@ namespace Script.Controllers
         [SerializeField] private GameManager gameManager;
         [SerializeField] private float rotationSpeed;
         [SerializeField] private float maxAngleRotation;
+        [SerializeField] private LayerMask layerMask;
 
         private Transform _transform;
         private int clockwiseRotation = 1;
@@ -22,9 +23,16 @@ namespace Script.Controllers
             _initialRotation = _transform.rotation.z;
         }
 
+     
         private void OnTriggerEnter2D(Collider2D other)
         {
-            moveToTarget.SetTarget(gameManager.Player);
+            
+            if ((layerMask & 1 << other.gameObject.layer) == 1 << other.gameObject.layer)
+            {
+                var player = gameManager.Player;
+                moveToTarget.SetTarget(player);
+            }
+            
         }
 
         private void Update()
