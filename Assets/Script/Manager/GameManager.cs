@@ -64,16 +64,25 @@ namespace Script.Manager
 
         public static void Kill()
         {
-            Debug.Log("Kill");
+            if (player.GetComponent<PlayerController>().IsInvincible)
+            {
+                Debug.Log("No Killed");
+
+                return;
+            }
+            Destroy(player);
+            Debug.Log("Killed");
         }
 
         private static void Invisibility()
         {
             Debug.Log("Invisible");
+            player.layer = 12;
         }
 
         private static void Invincibility()
         {
+            Debug.Log("Invincibility");
             player.GetComponent<PlayerController>().IsInvincible = true;
         }
 
