@@ -3,8 +3,7 @@
 namespace Script.Controllers
 {
     
-    [RequireComponent(typeof(Rigidbody2D))]
-    public class EnemyController : MonoBehaviour
+    public class MoveToTarget : MonoBehaviour
     {
         [SerializeField] Movement movement;
         [SerializeField] private GameObject target;
@@ -19,6 +18,11 @@ namespace Script.Controllers
             //récupération de la position verticale du player
             var vInput = direction.y;
             movement.Move(hInput, vInput);
+        }
+
+        void SetTarget(GameObject newTarget)
+        {
+            target = newTarget;
         }
     }
 }
