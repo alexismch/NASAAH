@@ -44,6 +44,9 @@ MonoBehaviour:
   gameManager: {fileID: 0}
   rotationSpeed: 0
   maxAngleRotation: 0
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 512
 --- !u!1001 &533615853259395151
 PrefabInstance:
   m_ObjectHideFlags: 0
