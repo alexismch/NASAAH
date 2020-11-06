@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Script.Score;
+using UnityEngine;
 
 namespace Script.Controllers
 {
@@ -7,7 +8,7 @@ namespace Script.Controllers
     {
         [SerializeField] Movement movement;
         [SerializeField] private GameObject target;
-        [SerializeField] private GameManager.GameManager gameManager;
+        [SerializeField] private GameManager gameManager;
         
         // Update is called once per frame
         void Update()

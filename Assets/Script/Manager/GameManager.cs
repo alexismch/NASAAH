@@ -8,6 +8,8 @@ namespace Script.Score
     {
         [SerializeField] private ScoreManager scoreManager;
         public ScoreManager ScoreManager => scoreManager;
+        [SerializeField] private GameObject player;
+        public GameObject Player => player;
 
         protected override void Initialize()
         {
