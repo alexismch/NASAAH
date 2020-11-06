@@ -40,7 +40,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7296586d155ea8f4192da291f1bbaa92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveToTarget: {fileID: 0}
+  moveToTarget: {fileID: 4029684632002896952}
   gameManager: {fileID: 0}
   rotationSpeed: 0
   maxAngleRotation: 0
@@ -54,20 +54,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 826612919543880372, guid: 6bfdab959dabb8244beaeeb32595f4c3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 1796994573923062976, guid: 6bfdab959dabb8244beaeeb32595f4c3,
         type: 3}
       propertyPath: m_Name
       value: kkhuaite Turret Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 1796994573923062976, guid: 6bfdab959dabb8244beaeeb32595f4c3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6709343522291829686, guid: 6bfdab959dabb8244beaeeb32595f4c3,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.56
+      value: -0.08456993
       objectReference: {fileID: 0}
     - target: {fileID: 6709343522291829686, guid: 6bfdab959dabb8244beaeeb32595f4c3,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 1.3085892
       objectReference: {fileID: 0}
     - target: {fileID: 6709343522291829686, guid: 6bfdab959dabb8244beaeeb32595f4c3,
         type: 3}
@@ -123,3 +133,15 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 533615853259395151}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &4029684632002896952 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3498056764487185527, guid: 6bfdab959dabb8244beaeeb32595f4c3,
+    type: 3}
+  m_PrefabInstance: {fileID: 533615853259395151}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2276567145753478287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2c684a1845c7f043a58a4724fb85ef8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
