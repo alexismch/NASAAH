@@ -31,7 +31,7 @@ namespace Script.Manager{
 
         public static void SetEffect(string effect)
         {
-            //
+            Debug.Log(effect);
         }
     }
 }

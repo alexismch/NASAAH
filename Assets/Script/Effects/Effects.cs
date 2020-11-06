@@ -7,7 +7,7 @@ namespace Script.Effects
     {
         [SerializeField] private EffectsTable effectsTable;
 
-        public void SpawnDrop()
+        public void ChooseEffect()
         {
             string effect = effectsTable.ChooseEffect();
             if (effect != null)
