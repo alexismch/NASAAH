@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 121233457}
   - component: {fileID: 121233455}
   - component: {fileID: 121233456}
+  - component: {fileID: 121233460}
+  - component: {fileID: 121233459}
   m_Layer: 0
   m_Name: kkhuaite
   m_TagString: Untagged
@@ -81,7 +83,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf31f696cc669d9439490a01c22d5a4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 2
+--- !u!58 &121233460
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2917115482071744664}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 3
+--- !u!114 &121233459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2917115482071744664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 525d29ab67b97404db3b0d03875707f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetList:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  moveToTarget: {fileID: 121233455}
+  gameManager: {fileID: 0}
 --- !u!1 &4319831695310819052
 GameObject:
   m_ObjectHideFlags: 0

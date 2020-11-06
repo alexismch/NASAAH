@@ -7,10 +7,13 @@ namespace Script.Controllers
     {
         [SerializeField] Movement movement;
         [SerializeField] private GameObject target;
-
+        [SerializeField] private GameManager.GameManager gameManager;
+        
         // Update is called once per frame
         void Update()
         {
+            if (!target)
+                target = gameManager.Player;
             var direction = ((Vector2)(target.transform.position - gameObject.transform.position)).normalized;
 
             //récupération de la position horizontale du player
