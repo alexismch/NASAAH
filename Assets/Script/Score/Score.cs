@@ -8,7 +8,7 @@ namespace Script.Score
 
         public void ScorePoints()
         {
-            GameManager.GameManager.Instance.ScoreManager.AddScore();
+            GameManager.Instance.ScoreManager.AddScore(points);
         }
     }
 }
