@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 121233459}
   - component: {fileID: 6697680756391901987}
   - component: {fileID: 2550137267025339793}
+  - component: {fileID: 14144270}
   m_Layer: 0
   m_Name: kkhuaite Patrol
   m_TagString: Untagged
@@ -155,6 +156,21 @@ CapsuleCollider2D:
   m_Offset: {x: -0.02, y: 0}
   m_Size: {x: 0.6, y: 1.4}
   m_Direction: 0
+--- !u!114 &14144270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2917115482071744664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0d7a01b8fa4e1c4bb45a95e9f767938, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 2048
 --- !u!1 &4319831695310819052
 GameObject:
   m_ObjectHideFlags: 0
