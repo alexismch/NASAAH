@@ -29,11 +29,10 @@ namespace Script.Controllers
 
         private void Update()
         {
-            //Définir le sens de rotation. Quand on arrive au bout, on fait clockwiseRotation = -clockwiseRotation
             //détecter quand on est au bout de la rotation
-            
             if (Math.Abs(_transform.rotation.z - (_initialRotation + maxAngleRotation)) == 0 || Math.Abs(_transform.rotation.z - (_initialRotation - maxAngleRotation)) == 0)
             {
+                //Définir le sens de rotation. Quand on arrive au bout, on fait clockwiseRotation = -clockwiseRotation
                 clockwiseRotation = -clockwiseRotation;
             }
             //Tourner auto de maxAngleRotation jusqu'à -maxAngleRotation
