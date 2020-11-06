@@ -1,6 +1,7 @@
-﻿using UnityEngine;
+﻿using Script.Manager;
+using UnityEngine;
 
-namespace Script.Score
+namespace Script.Manager
 {
     public class Score : MonoBehaviour
     {
@@ -8,7 +9,7 @@ namespace Script.Score
 
         public void ScorePoints()
         {
-            GameManager.GameManager.Instance.ScoreManager.AddScore();
+            GameManager.Instance.ScoreManager.AddScore(points);
         }
     }
 }

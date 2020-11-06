@@ -1,6 +1,6 @@
 ﻿using System;
 using UnityEngine;
-using Script.GameManager;
+using Script.Manager;
 
 namespace Script.Controllers
 {
@@ -8,7 +8,7 @@ namespace Script.Controllers
     {
         [SerializeField] private GameObject[] targetList;
         [SerializeField] private MoveToTarget moveToTarget;
-        [SerializeField] private GameManager.GameManager gameManager;
+        [SerializeField] private GameManager gameManager;
 
         private GameObject _currentTarget;
         private int _indexListTarget = 0;
