@@ -1,6 +1,7 @@
-﻿using UnityEngine;
+﻿using Script.Manager;
+using UnityEngine;
 
-namespace Script.Score
+namespace Script.Manager
 {
     public class Score : MonoBehaviour
     {

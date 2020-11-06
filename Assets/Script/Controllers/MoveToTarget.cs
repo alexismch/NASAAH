@@ -1,4 +1,4 @@
-﻿using Script.Score;
+﻿using Script.Manager;
 using UnityEngine;
 
 namespace Script.Controllers

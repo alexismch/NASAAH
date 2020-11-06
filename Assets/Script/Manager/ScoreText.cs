@@ -1,7 +1,7 @@
 ﻿using TMPro;
 using UnityEngine;
 
-namespace Script.Score
+namespace Script.Manager
 {
     [RequireComponent(typeof(TMP_Text))]
     public class ScoreText : MonoBehaviour

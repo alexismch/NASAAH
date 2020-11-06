@@ -1,6 +1,6 @@
 ﻿using System;
 using UnityEngine;
-using Script.Score;
+using Script.Manager;
 
 namespace Script.Controllers
 {

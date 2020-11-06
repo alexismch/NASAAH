@@ -1,9 +1,8 @@
-﻿using Script.Score;
+﻿using Script.Manager;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace Script.Score
-{
+namespace Script.Manager{
     public class GameManager : SingletonMb<GameManager>
     {
         [SerializeField] private ScoreManager scoreManager;

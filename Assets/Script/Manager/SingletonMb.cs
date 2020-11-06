@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Script.Score
+namespace Script.Manager
 {
     public abstract class SingletonMb<T> : MonoBehaviour where T : SingletonMb<T>
     {

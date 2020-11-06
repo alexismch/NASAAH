@@ -1,8 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace Script.Score
-{
+namespace Script.Manager{
     public class ScoreManager : MonoBehaviour
     {
         [SerializeField] private int _currentScore;
