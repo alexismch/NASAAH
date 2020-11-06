@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 121233460}
   - component: {fileID: 121233459}
   m_Layer: 0
-  m_Name: kkhuaite
+  m_Name: kkhuaite Patrol
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -118,6 +118,9 @@ MonoBehaviour:
   - {fileID: 0}
   moveToTarget: {fileID: 121233455}
   gameManager: {fileID: 0}
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 512
 --- !u!1 &4319831695310819052
 GameObject:
   m_ObjectHideFlags: 0
