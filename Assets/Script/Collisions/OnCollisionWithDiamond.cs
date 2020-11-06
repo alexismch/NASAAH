@@ -17,8 +17,14 @@ namespace Script.Collisions
 
         public enum Effects
         {
-            
-        }
+            SpeedBoost,
+            SpeedDebuf,
+            ForceBoost,
+            ForceDebuf,
+            Invisibility,
+            Invincibility,
+            InstantDie,
+    }
         
         
     }
