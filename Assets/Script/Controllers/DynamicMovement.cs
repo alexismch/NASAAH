@@ -12,6 +12,8 @@ namespace Script.Controllers
         
         [SerializeField] private float speed;
 
+        public float Speed => speed;
+
         private void Awake()
         {
             _rigidbody = GetComponent<Rigidbody2D>();
@@ -29,6 +31,11 @@ namespace Script.Controllers
             velocity.x = _horizontal * speed;
             velocity.y = _vertical * speed;
             _rigidbody.velocity = velocity;
+        }
+
+        public void SetSpeed(float value)
+        {
+            speed = value;
         }
     }
 }
