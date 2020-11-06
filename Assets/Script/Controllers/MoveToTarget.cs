@@ -11,7 +11,7 @@ namespace Script.Controllers
         // Update is called once per frame
         void Update()
         {
-            var direction = (target.transform.position - gameObject.transform.position).normalized;
+            var direction = ((Vector2)(target.transform.position - gameObject.transform.position)).normalized;
 
             //récupération de la position horizontale du player
             var hInput = direction.x;

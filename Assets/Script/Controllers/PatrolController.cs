@@ -9,22 +9,23 @@ namespace Script.Controllers
         [SerializeField] private GameObject[] targetList;
         [SerializeField] private MoveToTarget moveToTarget;
 
-        private GameObject _actualTarget;
+        private GameObject _currentTarget;
         private int _indexListTarget = 0;
 
         private void Awake()
         {
-            _actualTarget = targetList[_indexListTarget];
-            moveToTarget.SetTarget(_actualTarget);
+            _currentTarget = targetList[_indexListTarget];
+            moveToTarget.SetTarget(_currentTarget);
         }
 
         private void Update()
         {
-            if ((gameObject.transform.position - _actualTarget.transform.position).magnitude <= 10)
+            if (((Vector2)(_currentTarget.transform.position - gameObject.transform.position)).magnitude <= 2)
             {
                 _indexListTarget++;
-                _actualTarget = targetList[(_indexListTarget%targetList.Length)];
-                moveToTarget.SetTarget(_actualTarget);
+                _currentTarget = targetList[_indexListTarget%targetList.Length];
+                moveToTarget.SetTarget(_currentTarget);
+
             }
         }
     }
