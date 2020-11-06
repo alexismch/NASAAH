@@ -20,7 +20,7 @@ namespace Script.Controllers
             movement.Move(hInput, vInput);
         }
 
-        void SetTarget(GameObject newTarget)
+        public void SetTarget(GameObject newTarget)
         {
             target = newTarget;
         }
