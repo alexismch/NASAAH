@@ -64,7 +64,7 @@ GameObject:
   - component: {fileID: 7559589500255855002}
   m_Layer: 0
   m_Name: kkhuaite Patrol
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -193,12 +193,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 525d29ab67b97404db3b0d03875707f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetList: []
+  targetList:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   moveToTarget: {fileID: 8248196333092373060}
   gameManager: {fileID: 0}
-  layerMask:
-    serializedVersion: 2
-    m_Bits: 512
 --- !u!1 &4319831695310819052
 GameObject:
   m_ObjectHideFlags: 0

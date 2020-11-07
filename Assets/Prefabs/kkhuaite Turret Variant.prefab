@@ -67,6 +67,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 1796994573923062976, guid: 6bfdab959dabb8244beaeeb32595f4c3,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 3498056764487185513, guid: 6bfdab959dabb8244beaeeb32595f4c3,
         type: 3}
       propertyPath: m_AngularDrag
@@ -80,7 +85,7 @@ PrefabInstance:
     - target: {fileID: 6709343522291829686, guid: 6bfdab959dabb8244beaeeb32595f4c3,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.41
+      value: 0.06
       objectReference: {fileID: 0}
     - target: {fileID: 6709343522291829686, guid: 6bfdab959dabb8244beaeeb32595f4c3,
         type: 3}

@@ -9,7 +9,6 @@ namespace Script.Controllers
     {
         [SerializeField] private MoveToTarget moveToTarget;
         [SerializeField] private GameManager gameManager;
-        [SerializeField] private LayerMask layerMask;
         private bool _isMoving;
 
         private void OnTriggerEnter2D(Collider2D other)
