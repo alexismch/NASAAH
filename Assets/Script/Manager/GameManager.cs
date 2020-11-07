@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using Cinemachine;
+using Script.Animation;
 using Script.Controllers;
 using Script.Manager;
 using UnityEngine;
@@ -39,6 +40,12 @@ namespace Script.Manager
             var asyncload = SceneManager.LoadSceneAsync(sceneName);
         }
 
+
+        public void ExitGame()
+        {
+            Application.Quit();
+        }
+        
         public static void SetEffect(string effect)
         {
             switch (effect)
@@ -76,6 +83,7 @@ namespace Script.Manager
                 return;
             }
 
+            PlayerAnimation.Death();
             Destroy(_player);
             Debug.Log("Killed");
         }
@@ -86,6 +94,7 @@ namespace Script.Manager
             GameObject[] gameObjects = GameObject.FindGameObjectsWithTag("Enemy");
             foreach (var o in gameObjects)
             {
+                Debug.Log(o.name);
                 MoveToTarget moveToTarget = o.GetComponent<MoveToTarget>();
                 if (moveToTarget.Target != null && moveToTarget.Target.CompareTag("Player"))
                     moveToTarget.Target = o;
@@ -138,6 +147,11 @@ namespace Script.Manager
         {
             GameObject mainCamera = GameObject.FindGameObjectWithTag("MainCMDezoom");
             mainCamera.GetComponent<CinemachineVirtualCamera>().enabled = true;
+        }
+
+        public static void TakeWeapon()
+        {
+            _player.GetComponent<PlayerController>().TakeWeapon();
         }
     }
 }

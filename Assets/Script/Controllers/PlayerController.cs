@@ -8,14 +8,13 @@ namespace Script.Controllers
     {
         [SerializeField] Movement movement;
         [SerializeField] private bool _isInvincible = false;
-        private PlayerAnimation _playerAnimation;
         [SerializeField] private ArrowController arrowController;
         private Vector3 _worldPosition;
+        private bool _isArmed;
 
         private void Awake()
         {
             gameObject.tag = "Player";
-            _playerAnimation = GetComponent<PlayerAnimation>();
         }
 
         // Update is called once per frame
@@ -24,10 +23,10 @@ namespace Script.Controllers
             var hInput = Input.GetAxisRaw("Horizontal");
             var vInput = Input.GetAxisRaw("Vertical");
             movement.Move(hInput, vInput);
-            _playerAnimation.Walk(Mathf.Abs(hInput)+Mathf.Abs(vInput));
-            if (Input.GetButtonDown("Fire1"))
+            PlayerAnimation.Walk(Mathf.Abs(hInput)+Mathf.Abs(vInput));
+            if (Input.GetButtonDown("Fire1") && _isArmed)
             {
-                _playerAnimation.Attack();
+                PlayerAnimation.Attack();
                 
                 
                 var pos = Input.mousePosition;
@@ -47,6 +46,12 @@ namespace Script.Controllers
         {
             get => _isInvincible;
             set => _isInvincible = value;
+        }
+
+        public void TakeWeapon()
+        {
+            _isArmed = true;
+            PlayerAnimation.Take();
         }
     }
 }
