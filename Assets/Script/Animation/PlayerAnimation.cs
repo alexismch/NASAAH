@@ -7,6 +7,9 @@ namespace Script.Animation
     {
         private static Animator _animator;
         private static readonly int Speed = Animator.StringToHash("Speed");
+        private static readonly int Take1 = Animator.StringToHash("Take");
+        private static readonly int Death1 = Animator.StringToHash("Death");
+        private static readonly int Attack1 = Animator.StringToHash("Attack");
 
         private void Awake()
         {
@@ -20,12 +23,17 @@ namespace Script.Animation
 
         public static void Attack()
         {
-            _animator.SetTrigger("Attack");
+            _animator.SetTrigger(Attack1);
         }
 
         public static void Death()
         {
-            _animator.SetTrigger("Death");
+            _animator.SetTrigger(Death1);
+        }
+
+        public static void Take()
+        {
+            _animator.SetTrigger(Take1);
         }
     }
 }

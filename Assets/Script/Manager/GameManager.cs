@@ -141,5 +141,10 @@ namespace Script.Manager
             GameObject mainCamera = GameObject.FindGameObjectWithTag("MainCMDezoom");
             mainCamera.GetComponent<CinemachineVirtualCamera>().enabled = true;
         }
+
+        public static void TakeWeapon()
+        {
+            _player.GetComponent<PlayerController>().TakeWeapon();
+        }
     }
 }

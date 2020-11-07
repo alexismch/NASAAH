@@ -8,6 +8,7 @@ namespace Script.Controllers
     {
         [SerializeField] Movement movement;
         [SerializeField] private bool _isInvincible = false;
+        private bool _isArmed;
 
         private void Awake()
         {
@@ -21,7 +22,7 @@ namespace Script.Controllers
             var vInput = Input.GetAxisRaw("Vertical");
             movement.Move(hInput, vInput);
             PlayerAnimation.Walk(Mathf.Abs(hInput)+Mathf.Abs(vInput));
-            if(Input.GetButtonDown("Fire1"))
+            if(Input.GetButtonDown("Fire1") && _isArmed)
                 PlayerAnimation.Attack();
             
         }
@@ -30,6 +31,12 @@ namespace Script.Controllers
         {
             get => _isInvincible;
             set => _isInvincible = value;
+        }
+
+        public void TakeWeapon()
+        {
+            _isArmed = true;
+            PlayerAnimation.Take();
         }
     }
 }
