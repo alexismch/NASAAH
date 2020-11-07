@@ -7,25 +7,28 @@ namespace Script.Collisions
     public class OnCollisionWithArrow : MonoBehaviour
 
     {
-        private int force = 0;
-        private Vector3 OGPos;
+        private int _force = 0;
+        private Vector3 _ogPos;
 
-        public void SetForce(int force)
+        public int Force
         {
-            this.force = force;
+            get => _force;
+            set => _force = value;
         }
-        public void SetOGPos(Vector3 OGPos)
+
+        public Vector3 OgPos
         {
-            this.OGPos = OGPos;
+            get => _ogPos;
+            set => _ogPos = value;
         }
+
         // Start is called before the first frame update
         private void OnTriggerEnter2D(Collider2D other)
         {
           gameObject.TryRelease();
-          var gameObjectBody = other.attachedRigidbody.gameObject;
-          if(!gameObjectBody.CompareTag("Enemy")) return;
+          if(!other.gameObject.CompareTag("Enemy")) return;
           Debug.Log("je passe");
-          gameObjectBody.GetComponent<Knockback>().Push(force,OGPos);
+          other.GetComponent<Knockback>().Push(_force,_ogPos);
 
         }
 

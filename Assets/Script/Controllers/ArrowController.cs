@@ -20,8 +20,8 @@ namespace Script.Controllers
             var t = projectile.transform;
             t.position = projectileSpawner.position;
             t.rotation = q;
-            projectile.GetComponent<OnCollisionWithArrow>().SetForce(force);
-            projectile.GetComponent<OnCollisionWithArrow>().SetOGPos(t.position);
+            projectile.GetComponent<OnCollisionWithArrow>().Force = force;
+            projectile.GetComponent<OnCollisionWithArrow>().OgPos = t.position;
             var rb = projectile.GetComponent<Rigidbody2D>();
             rb.AddForce(projectile.transform.up * 500);
        
