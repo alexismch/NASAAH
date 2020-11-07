@@ -26,9 +26,9 @@ namespace Script.Controllers
 
         private void Update()
         {
-            if (_isInPatrol && ((Vector2)(_currentTargetTransform.position - _selfTransform.position)).magnitude <= 2)
+            if (_isInPatrol && ((Vector2) (_currentTargetTransform.position - _selfTransform.position)).magnitude <= 2)
             {
-                _indexListTarget = (_indexListTarget + 1)%targetList.Length;
+                _indexListTarget = (_indexListTarget + 1) % targetList.Length;
                 _currentTarget = targetList[_indexListTarget];
                 moveToTarget.SetTarget(_currentTarget);
                 _currentTargetTransform = _currentTarget.transform;
@@ -42,7 +42,6 @@ namespace Script.Controllers
                 _isInPatrol = false;
                 moveToTarget.SetTarget(gameManager.Player);
             }
-            
         }
     }
 }

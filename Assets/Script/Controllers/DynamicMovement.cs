@@ -2,14 +2,13 @@
 
 namespace Script.Controllers
 {
-    
     [RequireComponent(typeof(Rigidbody2D))]
     public class DynamicMovement : Movement
     {
         private float _horizontal;
         private float _vertical;
         private Rigidbody2D _rigidbody;
-        
+
         [SerializeField] private float speed;
 
         public float Speed
@@ -22,13 +21,13 @@ namespace Script.Controllers
         {
             _rigidbody = GetComponent<Rigidbody2D>();
         }
-        
+
         public override void Move(float horizontal, float vertical)
         {
             _horizontal = horizontal;
             _vertical = vertical;
         }
-        
+
         private void FixedUpdate()
         {
             var velocity = _rigidbody.velocity;

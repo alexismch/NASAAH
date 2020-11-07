@@ -14,7 +14,7 @@ namespace Script.Manager
 
         protected override void Initialize()
         {
-           _player = GameObject.FindGameObjectWithTag("Player");
+            _player = GameObject.FindGameObjectWithTag("Player");
         }
 
         protected override void Cleanup()
@@ -71,6 +71,7 @@ namespace Script.Manager
 
                 return;
             }
+
             Destroy(_player);
             Debug.Log("Killed");
         }
