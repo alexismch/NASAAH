@@ -809,6 +809,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: kkhuaite Patrol
       objectReference: {fileID: 0}
+    - target: {fileID: 7559589500255855002, guid: 176f13a897b885f43bce9b8d4bec18b8,
+        type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 1884141223}
     - target: {fileID: 7897053677944643566, guid: 176f13a897b885f43bce9b8d4bec18b8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -847,7 +852,7 @@ PrefabInstance:
     - target: {fileID: 7897053677944643566, guid: 176f13a897b885f43bce9b8d4bec18b8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7897053677944643566, guid: 176f13a897b885f43bce9b8d4bec18b8,
         type: 3}
@@ -1357,7 +1362,7 @@ Transform:
   - {fileID: 798747866}
   - {fileID: 1723181806}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1108350658
 PrefabInstance:
@@ -3303,7 +3308,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: kkhuaite Follow Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 2297778532677798378, guid: 6bfdab959dabb8244beaeeb32595f4c3,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 3498056764487185527, guid: 6bfdab959dabb8244beaeeb32595f4c3,
+        type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 542514234}
+    - target: {fileID: 4826982237242545692, guid: 6bfdab959dabb8244beaeeb32595f4c3,
         type: 3}
       propertyPath: target
       value: 
@@ -3903,7 +3918,7 @@ PrefabInstance:
     - target: {fileID: 6102831083016481190, guid: 3cdc65834fcbcd745bf94801c6d96cfc,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6102831083016481190, guid: 3cdc65834fcbcd745bf94801c6d96cfc,
         type: 3}
@@ -3958,7 +3973,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   persistent: 0
   scoreManager: {fileID: 1619532108}
-  player: {fileID: 542514234}
 --- !u!4 &1884141224
 Transform:
   m_ObjectHideFlags: 0
@@ -4040,6 +4054,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Hero
+      objectReference: {fileID: 0}
+    - target: {fileID: 5452077261371529166, guid: 251028fef2de57449980b57eee432f5a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 251028fef2de57449980b57eee432f5a, type: 3}
@@ -4139,6 +4158,11 @@ PrefabInstance:
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 1884141223}
+    - target: {fileID: 1766697122440960421, guid: 6fbd3b196b0f8ad4990800d3b78c45dc,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2276567145753478287, guid: 6fbd3b196b0f8ad4990800d3b78c45dc,
         type: 3}
       propertyPath: m_Name
@@ -4182,7 +4206,7 @@ PrefabInstance:
     - target: {fileID: 6519990326639123449, guid: 6fbd3b196b0f8ad4990800d3b78c45dc,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6519990326639123449, guid: 6fbd3b196b0f8ad4990800d3b78c45dc,
         type: 3}
