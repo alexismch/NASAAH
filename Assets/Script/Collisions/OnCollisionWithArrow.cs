@@ -25,19 +25,15 @@ namespace Script.Collisions
         // Start is called before the first frame update
         private void OnTriggerEnter2D(Collider2D other)
         {
-          gameObject.TryRelease();
-          if(!other.gameObject.CompareTag("Enemy")) return;
-          Debug.Log("je passe");
-          other.GetComponent<Knockback>().Push(_force,_ogPos);
-
+            gameObject.TryRelease();
+            if (!other.gameObject.CompareTag("Enemy")) return;
+            Debug.Log("je passe");
+            other.GetComponent<Knockback>().Push(_force, _ogPos);
         }
 
         // Update is called once per frame
         void Update()
         {
-        
         }
-
-        
     }
 }

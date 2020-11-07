@@ -45,7 +45,7 @@ namespace Script.Manager
         {
             Application.Quit();
         }
-        
+
         public static void SetEffect(string effect)
         {
             switch (effect)
@@ -99,6 +99,7 @@ namespace Script.Manager
                 if (moveToTarget.Target != null && moveToTarget.Target.CompareTag("Player"))
                     moveToTarget.Target = o;
             }
+
             _player.tag = "PlayerInvisible";
             var color = _player.GetComponentInChildren<SpriteRenderer>().color;
             color.a = 0.5f;

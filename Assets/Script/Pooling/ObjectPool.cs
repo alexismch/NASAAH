@@ -18,10 +18,11 @@ namespace Script.Pooling
         {
             if (_pools.TryGetValue(pooledObject, out var pool) == false)
             {
-                pool = new GameObject(pooledObject.name  + " Pool", typeof(ObjectPool)).GetComponent<ObjectPool>();
+                pool = new GameObject(pooledObject.name + " Pool", typeof(ObjectPool)).GetComponent<ObjectPool>();
                 pool.pooledObject = pooledObject;
                 _pools[pooledObject] = pool;
             }
+
             return pool;
         }
 
@@ -39,11 +40,13 @@ namespace Script.Pooling
                 toAcquire.SetActive(true);
                 return true;
             }
+
             if (_trackedInstances.Count >= maxActiveInstances)
             {
                 toAcquire = null;
                 return false;
             }
+
             toAcquire = Instantiate(pooledObject);
             _trackedInstances.Add(toAcquire);
             var pooled = toAcquire.GetComponent<Pooled>();
