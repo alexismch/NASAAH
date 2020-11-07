@@ -15,7 +15,6 @@ namespace Script.Controllers
         private Transform _currentTargetTransform;
         private Transform _selfTransform;
         private Boolean _isInPatrol = true;
-        [SerializeField] private LayerMask layerMask;
 
         private void Awake()
         {
@@ -38,7 +37,7 @@ namespace Script.Controllers
 
         private void OnTriggerEnter2D(Collider2D other)
         {
-            if ((layerMask & 1 << other.gameObject.layer) == 1 << other.gameObject.layer)
+            if (other.CompareTag("Player"))
             {
                 _isInPatrol = false;
                 moveToTarget.SetTarget(gameManager.Player);
