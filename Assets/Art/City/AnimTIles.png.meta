@@ -1,0 +1,1796 @@
+fileFormatVersion: 2
+guid: 707177fb555864c428d52e88bab9a057
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4025643361226820580
+    second: AnimTIles_0
+  - first:
+      213: -8606922440059757064
+    second: AnimTIles_1
+  - first:
+      213: -2202582090330350181
+    second: AnimTIles_2
+  - first:
+      213: 2450948127883858356
+    second: AnimTIles_3
+  - first:
+      213: -6957268092177065520
+    second: AnimTIles_4
+  - first:
+      213: -252398537516166743
+    second: AnimTIles_5
+  - first:
+      213: -6792667754412249408
+    second: AnimTIles_6
+  - first:
+      213: -5227534054310569274
+    second: AnimTIles_7
+  - first:
+      213: -1196164186184882612
+    second: AnimTIles_8
+  - first:
+      213: -3069714206323960725
+    second: AnimTIles_9
+  - first:
+      213: -6897578877028761872
+    second: AnimTIles_10
+  - first:
+      213: -6543160733663968467
+    second: AnimTIles_11
+  - first:
+      213: -5295617548373440722
+    second: AnimTIles_12
+  - first:
+      213: -3985367125591733518
+    second: AnimTIles_13
+  - first:
+      213: -979378812192075181
+    second: AnimTIles_14
+  - first:
+      213: -6547650601134873699
+    second: AnimTIles_15
+  - first:
+      213: -8054693210541767470
+    second: AnimTIles_16
+  - first:
+      213: -6106838965202436666
+    second: AnimTIles_17
+  - first:
+      213: -6866202977032222649
+    second: AnimTIles_18
+  - first:
+      213: -8231042143454402122
+    second: AnimTIles_19
+  - first:
+      213: -2533357085098821731
+    second: AnimTIles_20
+  - first:
+      213: 2592723062243388451
+    second: AnimTIles_21
+  - first:
+      213: 4384575441990853174
+    second: AnimTIles_22
+  - first:
+      213: -8758074384074959590
+    second: AnimTIles_23
+  - first:
+      213: 1952483000926323449
+    second: AnimTIles_24
+  - first:
+      213: -74941393104590736
+    second: AnimTIles_25
+  - first:
+      213: 3483011823545828408
+    second: AnimTIles_26
+  - first:
+      213: 2229982547709831216
+    second: AnimTIles_27
+  - first:
+      213: -3278524524095674678
+    second: AnimTIles_28
+  - first:
+      213: 5208284092445943465
+    second: AnimTIles_29
+  - first:
+      213: -3178645333233843363
+    second: AnimTIles_30
+  - first:
+      213: 253199805028971558
+    second: AnimTIles_31
+  - first:
+      213: 2756246633409167567
+    second: AnimTIles_32
+  - first:
+      213: -3388292447357369292
+    second: AnimTIles_33
+  - first:
+      213: -1002600425028357125
+    second: AnimTIles_34
+  - first:
+      213: 2072252662988362525
+    second: AnimTIles_35
+  - first:
+      213: 5717878636145815573
+    second: AnimTIles_36
+  - first:
+      213: -7176774943529276140
+    second: AnimTIles_37
+  - first:
+      213: 8199732733206496112
+    second: AnimTIles_38
+  - first:
+      213: 5420608733866785449
+    second: AnimTIles_39
+  - first:
+      213: -2760212774780048916
+    second: AnimTIles_40
+  - first:
+      213: -7901129972630473278
+    second: AnimTIles_41
+  - first:
+      213: 2558904253359145528
+    second: AnimTIles_42
+  - first:
+      213: 5799575813266848315
+    second: AnimTIles_43
+  - first:
+      213: -3275929650093190092
+    second: AnimTIles_44
+  - first:
+      213: 7760256006038939203
+    second: AnimTIles_45
+  - first:
+      213: -2874803466387327214
+    second: AnimTIles_46
+  - first:
+      213: -5362515446812514194
+    second: AnimTIles_47
+  - first:
+      213: -2370084629570574555
+    second: AnimTIles_48
+  - first:
+      213: -12115977507055930
+    second: AnimTIles_49
+  - first:
+      213: 8077656504079196305
+    second: AnimTIles_50
+  - first:
+      213: 6270828089844721597
+    second: AnimTIles_51
+  - first:
+      213: -2864401738822254406
+    second: AnimTIles_52
+  - first:
+      213: 8613991218596872512
+    second: AnimTIles_53
+  - first:
+      213: 8336355602263691518
+    second: AnimTIles_54
+  - first:
+      213: -3430889552158693232
+    second: AnimTIles_55
+  - first:
+      213: -2686497496287594467
+    second: AnimTIles_56
+  - first:
+      213: -3836138353474309704
+    second: AnimTIles_57
+  - first:
+      213: -7831580060651299990
+    second: AnimTIles_58
+  - first:
+      213: -6479841218234697865
+    second: AnimTIles_59
+  - first:
+      213: -696319200569835181
+    second: AnimTIles_60
+  - first:
+      213: 815135138365843455
+    second: AnimTIles_61
+  - first:
+      213: 889820644235892581
+    second: AnimTIles_62
+  - first:
+      213: -4115715078837540805
+    second: AnimTIles_63
+  - first:
+      213: -3745864754403158959
+    second: AnimTIles_64
+  - first:
+      213: 5994727018998326380
+    second: AnimTIles_65
+  - first:
+      213: -156126283236922617
+    second: AnimTIles_66
+  - first:
+      213: -2548697727148552852
+    second: AnimTIles_67
+  - first:
+      213: -7131563294733040712
+    second: AnimTIles_68
+  - first:
+      213: 8836225988084370218
+    second: AnimTIles_69
+  - first:
+      213: 8008799538131261049
+    second: AnimTIles_70
+  - first:
+      213: 8449696959276224336
+    second: AnimTIles_71
+  - first:
+      213: -1272277132256278548
+    second: AnimTIles_72
+  - first:
+      213: 1076957319396537359
+    second: AnimTIles_73
+  - first:
+      213: 2077641756141264151
+    second: AnimTIles_74
+  - first:
+      213: -1119482766022091669
+    second: AnimTIles_75
+  - first:
+      213: -508451746999809822
+    second: AnimTIles_76
+  - first:
+      213: -1332964304059317498
+    second: AnimTIles_77
+  - first:
+      213: -8202037755851717970
+    second: AnimTIles_78
+  - first:
+      213: -1264725001344694015
+    second: AnimTIles_79
+  - first:
+      213: -2530442594825882520
+    second: AnimTIles_80
+  - first:
+      213: 7043507549549624373
+    second: AnimTIles_81
+  - first:
+      213: 3689362653958288412
+    second: AnimTIles_82
+  - first:
+      213: 3423439145273620062
+    second: AnimTIles_83
+  - first:
+      213: -1831509200149080347
+    second: AnimTIles_84
+  - first:
+      213: -1672491398954888185
+    second: AnimTIles_85
+  - first:
+      213: -2486740594949806491
+    second: AnimTIles_86
+  - first:
+      213: -7357689111952619677
+    second: AnimTIles_87
+  - first:
+      213: 8280490284547993716
+    second: AnimTIles_88
+  - first:
+      213: 8067117886285043685
+    second: AnimTIles_89
+  - first:
+      213: -6084608714134712053
+    second: AnimTIles_90
+  - first:
+      213: -6802896525697477626
+    second: AnimTIles_91
+  - first:
+      213: 2952986956367540010
+    second: AnimTIles_92
+  - first:
+      213: -1572462171678627019
+    second: AnimTIles_93
+  - first:
+      213: 7274252125185919257
+    second: AnimTIles_94
+  - first:
+      213: -8475544319169250273
+    second: AnimTIles_95
+  - first:
+      213: -4810190296899181602
+    second: AnimTIles_96
+  - first:
+      213: 6071954248007201838
+    second: AnimTIles_97
+  - first:
+      213: -6818422091503533245
+    second: AnimTIles_98
+  - first:
+      213: 4412573010090423779
+    second: AnimTIles_99
+  - first:
+      213: -1498456537165448917
+    second: AnimTIles_100
+  - first:
+      213: 8328525139605757339
+    second: AnimTIles_101
+  - first:
+      213: 84843923447600375
+    second: AnimTIles_102
+  - first:
+      213: 658898752862708918
+    second: AnimTIles_103
+  - first:
+      213: -1153241029623935574
+    second: AnimTIles_104
+  - first:
+      213: -2051031885151536869
+    second: AnimTIles_105
+  - first:
+      213: 2497613987717349240
+    second: AnimTIles_106
+  - first:
+      213: -2684237336890012577
+    second: AnimTIles_107
+  - first:
+      213: -5221156131154987041
+    second: AnimTIles_108
+  - first:
+      213: -9002739827420481453
+    second: AnimTIles_109
+  - first:
+      213: -4140014592714656304
+    second: AnimTIles_110
+  - first:
+      213: -3693609349167619175
+    second: AnimTIles_111
+  - first:
+      213: -8264697810309932419
+    second: AnimTIles_112
+  - first:
+      213: -838838622797995954
+    second: AnimTIles_113
+  - first:
+      213: 4826923986860856319
+    second: AnimTIles_114
+  - first:
+      213: -7726911745268280977
+    second: AnimTIles_115
+  - first:
+      213: -1596475383441822726
+    second: AnimTIles_116
+  - first:
+      213: 3666383281995025739
+    second: AnimTIles_117
+  - first:
+      213: -7874081569444091190
+    second: AnimTIles_118
+  - first:
+      213: 674705783827140535
+    second: AnimTIles_119
+  - first:
+      213: 6033890730416582883
+    second: AnimTIles_120
+  - first:
+      213: -6531228161902899012
+    second: AnimTIles_121
+  - first:
+      213: 1738485467920266738
+    second: AnimTIles_122
+  - first:
+      213: 1933212538663013044
+    second: AnimTIles_123
+  - first:
+      213: 8194301357494932530
+    second: AnimTIles_124
+  - first:
+      213: -6840562025882984516
+    second: AnimTIles_125
+  - first:
+      213: -1805712591206448776
+    second: AnimTIles_126
+  - first:
+      213: 28794901674378839
+    second: AnimTIles_127
+  - first:
+      213: 1263741634317849636
+    second: AnimTIles_128
+  - first:
+      213: 1769937149608463003
+    second: AnimTIles_129
+  - first:
+      213: 1468605332755884154
+    second: AnimTIles_130
+  - first:
+      213: 2217524965062442337
+    second: AnimTIles_131
+  - first:
+      213: 7036339920632553629
+    second: AnimTIles_132
+  - first:
+      213: -37722903896376077
+    second: AnimTIles_133
+  - first:
+      213: 9183461393973692688
+    second: AnimTIles_134
+  - first:
+      213: -5536184395799515063
+    second: AnimTIles_135
+  - first:
+      213: -6643470666673193723
+    second: AnimTIles_136
+  - first:
+      213: -8094831698468137108
+    second: AnimTIles_137
+  - first:
+      213: -8196047847801594487
+    second: AnimTIles_138
+  - first:
+      213: 489750116925948152
+    second: AnimTIles_139
+  - first:
+      213: -7852352584502545243
+    second: AnimTIles_140
+  - first:
+      213: 5832685698304201401
+    second: AnimTIles_141
+  - first:
+      213: 6525010059498794400
+    second: AnimTIles_142
+  - first:
+      213: 7321490197527860981
+    second: AnimTIles_143
+  - first:
+      213: 6304864530313552067
+    second: AnimTIles_144
+  - first:
+      213: -3258447478670178631
+    second: AnimTIles_145
+  - first:
+      213: -8931720608526218397
+    second: AnimTIles_146
+  - first:
+      213: -8044699074701518831
+    second: AnimTIles_147
+  - first:
+      213: -4610654534017753195
+    second: AnimTIles_148
+  - first:
+      213: -7817178336732173194
+    second: AnimTIles_149
+  - first:
+      213: 3899622410976411705
+    second: AnimTIles_150
+  - first:
+      213: -7481930871377977711
+    second: AnimTIles_151
+  - first:
+      213: -3491288816069940716
+    second: AnimTIles_152
+  - first:
+      213: -843012265874041481
+    second: AnimTIles_153
+  - first:
+      213: -1551516456865655785
+    second: AnimTIles_154
+  - first:
+      213: -291291216714799067
+    second: AnimTIles_155
+  - first:
+      213: 4818847989467733798
+    second: AnimTIles_156
+  - first:
+      213: -8284658532102702319
+    second: AnimTIles_157
+  - first:
+      213: 4432869538424563463
+    second: AnimTIles_158
+  - first:
+      213: 3835688021465070539
+    second: AnimTIles_159
+  - first:
+      213: 3344976403242256335
+    second: AnimTIles_160
+  - first:
+      213: 4980650908698454227
+    second: AnimTIles_161
+  - first:
+      213: 3478009253746539010
+    second: AnimTIles_162
+  - first:
+      213: 3797467581582764187
+    second: AnimTIles_163
+  - first:
+      213: 5979127346074454165
+    second: AnimTIles_164
+  - first:
+      213: -263469545648911926
+    second: AnimTIles_165
+  - first:
+      213: 1327756718123954455
+    second: AnimTIles_166
+  - first:
+      213: 4761341544172351791
+    second: AnimTIles_167
+  - first:
+      213: 5279341177253291616
+    second: AnimTIles_168
+  - first:
+      213: 2564659856070092606
+    second: AnimTIles_169
+  - first:
+      213: -3233119503285289268
+    second: AnimTIles_170
+  - first:
+      213: 36305966138112545
+    second: AnimTIles_171
+  - first:
+      213: -4212768702524675859
+    second: AnimTIles_172
+  - first:
+      213: -3905442443874543476
+    second: AnimTIles_173
+  - first:
+      213: 557122853170330577
+    second: AnimTIles_174
+  - first:
+      213: 6066560934003884811
+    second: AnimTIles_175
+  - first:
+      213: -2960997661931090736
+    second: AnimTIles_176
+  - first:
+      213: -4095784857848412539
+    second: AnimTIles_177
+  - first:
+      213: -1848020438585690421
+    second: AnimTIles_178
+  - first:
+      213: 8326966462283709598
+    second: AnimTIles_179
+  - first:
+      213: -3680402664535799123
+    second: AnimTIles_180
+  - first:
+      213: -505189403146941435
+    second: AnimTIles_181
+  - first:
+      213: -5027961119901466780
+    second: AnimTIles_182
+  - first:
+      213: -275906192998314042
+    second: AnimTIles_183
+  - first:
+      213: 6635434555422693474
+    second: AnimTIles_184
+  - first:
+      213: 1071980563402311545
+    second: AnimTIles_185
+  - first:
+      213: 4254046814473072067
+    second: AnimTIles_186
+  - first:
+      213: -2406676060580974239
+    second: AnimTIles_187
+  - first:
+      213: 7875665210057086554
+    second: AnimTIles_188
+  - first:
+      213: 8705004841506759283
+    second: AnimTIles_189
+  - first:
+      213: -5890333282888990756
+    second: AnimTIles_190
+  - first:
+      213: 6125720622000564574
+    second: AnimTIles_191
+  - first:
+      213: 243092807308247308
+    second: AnimTIles_192
+  - first:
+      213: 354974991475970461
+    second: AnimTIles_193
+  - first:
+      213: -3276282140777368606
+    second: AnimTIles_194
+  - first:
+      213: 2688553589391405269
+    second: AnimTIles_195
+  - first:
+      213: -1901789099400625850
+    second: AnimTIles_196
+  - first:
+      213: 1368475997902069410
+    second: AnimTIles_197
+  - first:
+      213: 4895746520627912282
+    second: AnimTIles_198
+  - first:
+      213: 2828834559574827063
+    second: AnimTIles_199
+  - first:
+      213: 2056989074873297509
+    second: AnimTIles_200
+  - first:
+      213: -5817786905143584754
+    second: AnimTIles_201
+  - first:
+      213: -91142887308196860
+    second: AnimTIles_202
+  - first:
+      213: -8910139649411572884
+    second: AnimTIles_203
+  - first:
+      213: 369096244267382698
+    second: AnimTIles_204
+  - first:
+      213: -6551614190805459225
+    second: AnimTIles_205
+  - first:
+      213: 6413435226752315912
+    second: AnimTIles_206
+  - first:
+      213: -1577478105251750099
+    second: AnimTIles_207
+  - first:
+      213: 7286739050389444092
+    second: AnimTIles_208
+  - first:
+      213: 1619510127242743121
+    second: AnimTIles_209
+  - first:
+      213: 6078507726511802366
+    second: AnimTIles_210
+  - first:
+      213: 5461325729244252150
+    second: AnimTIles_211
+  - first:
+      213: -2135474963805748616
+    second: AnimTIles_212
+  - first:
+      213: -223802830369195685
+    second: AnimTIles_213
+  - first:
+      213: -7279969961979552445
+    second: AnimTIles_214
+  - first:
+      213: 6848953309543105559
+    second: AnimTIles_215
+  - first:
+      213: 4178638914413667725
+    second: AnimTIles_216
+  - first:
+      213: -1923965677331086583
+    second: AnimTIles_217
+  - first:
+      213: 8679241577325605242
+    second: AnimTIles_218
+  - first:
+      213: -863441912964104060
+    second: AnimTIles_219
+  - first:
+      213: 2351255804379114737
+    second: AnimTIles_220
+  - first:
+      213: 5721046185232326131
+    second: AnimTIles_221
+  - first:
+      213: -8464107538598000172
+    second: AnimTIles_222
+  - first:
+      213: -7705538635678745396
+    second: AnimTIles_223
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 24
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: AnimTIles_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c147aa511ba0228c0800000000000000
+      internalID: -4025643361226820580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimTIles_1
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fd56e664a11e8880800000000000000
+      internalID: -8606922440059757064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimTIles_2
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9dd835324bde61e0800000000000000
+      internalID: -2202582090330350181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimTIles_3
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b11d6d2654830220800000000000000
+      internalID: 2450948127883858356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimTIles_4
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d950a60881d27f90800000000000000
+      internalID: -6957268092177065520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimTIles_5
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a1558d0edc4f7cf0800000000000000
+      internalID: -252398537516166743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimTIles_6
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cee10d9aa89bb1a0800000000000000
+      internalID: -6792667754412249408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimTIles_7
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ca9f8969711477b0800000000000000
+      internalID: -5227534054310569274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimTIles_8
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c46e76d920f566fe0800000000000000
+      internalID: -1196164186184882612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimTIles_9
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b641712813f2665d0800000000000000
+      internalID: -3069714206323960725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimTIles_10
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fe76786e80e640a0800000000000000
+      internalID: -6897578877028761872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimTIles_11
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d23cca9daf50235a0800000000000000
+      internalID: -6543160733663968467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimTIles_12
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2740eaa5ef2286b0800000000000000
+      internalID: -5295617548373440722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimTIles_13
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fac593f6b121b8c0800000000000000
+      internalID: -3985367125591733518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimTIles_14
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3525fb6c82c8862f0800000000000000
+      internalID: -979378812192075181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimTIles_15
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d93abfd18721225a0800000000000000
+      internalID: -6547650601134873699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimTIles_16
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d448ea533bf73090800000000000000
+      internalID: -8054693210541767470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimTIles_17
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cd389a0156204ba0800000000000000
+      internalID: -6106838965202436666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimTIles_18
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 748c34665c856b0a0800000000000000
+      internalID: -6866202977032222649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimTIles_19
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b9612cc7c675cd80800000000000000
+      internalID: -8231042143454402122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimTIles_20
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9737754725b7dcd0800000000000000
+      internalID: -2533357085098821731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimTIles_21
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32ceaf563e33bf320800000000000000
+      internalID: 2592723062243388451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimTIles_22
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63224ce422429dc30800000000000000
+      internalID: 4384575441990853174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimTIles_23
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1593ccffb1157680800000000000000
+      internalID: -8758074384074959590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimTIles_24
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f2c334d1fc981b10800000000000000
+      internalID: 1952483000926323449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimTIles_25
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07827053331c5fef0800000000000000
+      internalID: -74941393104590736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimTIles_26
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8344feabcc4265030800000000000000
+      internalID: 3483011823545828408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimTIles_27
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 038a09bef4d72fe10800000000000000
+      internalID: 2229982547709831216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimTIles_28
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac6eed1d0575082d0800000000000000
+      internalID: -3278524524095674678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimTIles_29
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a6ee8399ca874840800000000000000
+      internalID: 5208284092445943465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimTIles_30
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d53c4ad19ee23e3d0800000000000000
+      internalID: -3178645333233843363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimTIles_31
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62433f391eb838300800000000000000
+      internalID: 253199805028971558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimTIles_32
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc048b9b5b7204620800000000000000
+      internalID: 2756246633409167567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimTIles_33
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 434002898fd5af0d0800000000000000
+      internalID: -3388292447357369292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimTIles_34
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf37786b93c0612f0800000000000000
+      internalID: -1002600425028357125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimTIles_35
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d13574651de12cc10800000000000000
+      internalID: 2072252662988362525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimTIles_36
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5103440335cf95f40800000000000000
+      internalID: 5717878636145815573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimTIles_37
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41d630a8639f66c90800000000000000
+      internalID: -7176774943529276140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimTIles_38
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0738aef0a7d4bc170800000000000000
+      internalID: 8199732733206496112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimTIles_39
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9aa72808ceed93b40800000000000000
+      internalID: 5420608733866785449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimTIles_40
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce96db60b11c1b9d0800000000000000
+      internalID: -2760212774780048916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimTIles_41
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c53b21e62c895290800000000000000
+      internalID: -7901129972630473278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimTIles_42
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83245bb5cdd038320800000000000000
+      internalID: 2558904253359145528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimTIles_43
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3ab7b5897b3c7050800000000000000
+      internalID: 5799575813266848315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimTIles_44
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4349601075f8982d0800000000000000
+      internalID: -3275929650093190092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimTIles_45
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 346ea0ec8b7f1bb60800000000000000
+      internalID: 7760256006038939203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimTIles_46
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 217fbea8a75aa18d0800000000000000
+      internalID: -2874803466387327214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimTIles_47
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e68e13aec948495b0800000000000000
+      internalID: -5362515446812514194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
