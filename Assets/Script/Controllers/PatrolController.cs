@@ -7,7 +7,7 @@ namespace Script.Controllers
     public class PatrolController : MonoBehaviour
     {
         [SerializeField] private GameObject[] targetList;
-        
+
         private MoveToTarget _moveToTarget;
         private GameObject _currentTarget;
         private int _indexListTarget = 0;
@@ -27,7 +27,8 @@ namespace Script.Controllers
 
         private void Update()
         {
-            if (_isInPatrol && ((Vector2) (_currentTargetTransform.position - _selfTransform.position)).magnitude <= 0.1)
+            if (_isInPatrol && ((Vector2) (_currentTargetTransform.position - _selfTransform.position)).magnitude <=
+                0.1)
             {
                 _indexListTarget = (_indexListTarget + 1) % targetList.Length;
                 _currentTarget = targetList[_indexListTarget];

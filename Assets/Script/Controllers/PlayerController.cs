@@ -12,7 +12,7 @@ namespace Script.Controllers
         private Vector3 _worldPosition;
         [SerializeField] private bool _isArmed;
         private int force;
-        
+
 
         private void Awake()
         {
@@ -26,23 +26,18 @@ namespace Script.Controllers
             var hInput = Input.GetAxisRaw("Horizontal");
             var vInput = Input.GetAxisRaw("Vertical");
             movement.Move(hInput, vInput);
-            PlayerAnimation.Walk(Mathf.Abs(hInput)+Mathf.Abs(vInput));
+            PlayerAnimation.Walk(Mathf.Abs(hInput) + Mathf.Abs(vInput));
             if (Input.GetButtonDown("Fire1") && _isArmed)
             {
                 PlayerAnimation.Attack();
-                
-                
+
+
                 var pos = Input.mousePosition;
                 pos.z = transform.position.z - Camera.main.transform.position.z;
                 pos = Camera.main.ScreenToWorldPoint(pos);
                 var q = Quaternion.FromToRotation(Vector3.up, pos - transform.position);
-                arrowController.Fire(q,force);
-                
-                
-               
+                arrowController.Fire(q, force);
             }
-                
-
         }
 
         public bool IsInvincible
