@@ -17,7 +17,7 @@ namespace Script.Controllers
 
         private void Awake()
         {
-            gameObject.tag = "Player";
+            gameObject.tag = "Enemy";
             _moveToTarget = GetComponent<MoveToTarget>();
             _currentTarget = targetList[_indexListTarget];
             _moveToTarget.Target = _currentTarget;

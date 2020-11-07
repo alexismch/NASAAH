@@ -85,7 +85,7 @@ namespace Script.Manager
             GameObject[] gameObjects = GameObject.FindGameObjectsWithTag("Enemy");
             foreach (var o in gameObjects)
             {
-                MoveToTarget moveToTarget = o.GetComponentInParent<MoveToTarget>();
+                MoveToTarget moveToTarget = o.GetComponent<MoveToTarget>();
                 if (moveToTarget.Target != null && moveToTarget.Target.CompareTag("Player"))
                     moveToTarget.Target = o;
             }
