@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1758829174230009773}
   - component: {fileID: 1231514828190433067}
   - component: {fileID: 4733326483940917103}
-  - component: {fileID: 4316782401496291857}
+  - component: {fileID: 1127788122490253732}
   m_Layer: 0
   m_Name: Arrow
   m_TagString: Untagged
@@ -131,7 +131,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.05, y: 0.19}
   m_EdgeRadius: 0
---- !u!114 &4316782401496291857
+--- !u!114 &1127788122490253732
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -140,10 +140,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 4171622741114516805}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0d7a01b8fa4e1c4bb45a95e9f767938, type: 3}
+  m_Script: {fileID: 11500000, guid: 3d33907b017d98b4dbee3877b16bc22e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   layerMask:
     serializedVersion: 2
     m_Bits: 2048
-  destroyOnTrigger: 1

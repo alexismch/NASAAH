@@ -35,7 +35,7 @@ PrefabInstance:
     - target: {fileID: 2917115482071744664, guid: 176f13a897b885f43bce9b8d4bec18b8,
         type: 3}
       propertyPath: m_Name
-      value: kkhuaite Kamikaze Variant (5)
+      value: kkhuaite Kamikaze Variant
       objectReference: {fileID: 0}
     - target: {fileID: 4319831695310819052, guid: 176f13a897b885f43bce9b8d4bec18b8,
         type: 3}
@@ -45,7 +45,7 @@ PrefabInstance:
     - target: {fileID: 5176308900301341399, guid: 176f13a897b885f43bce9b8d4bec18b8,
         type: 3}
       propertyPath: layerMask.m_Bits
-      value: 0
+      value: 2048
       objectReference: {fileID: 0}
     - target: {fileID: 7897053677944643566, guid: 176f13a897b885f43bce9b8d4bec18b8,
         type: 3}
