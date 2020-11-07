@@ -410,10 +410,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 971664919081330709, guid: 176f13a897b885f43bce9b8d4bec18b8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 2917115482071744664, guid: 176f13a897b885f43bce9b8d4bec18b8,
         type: 3}
       propertyPath: m_Name
       value: Patroller 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4319831695310819052, guid: 176f13a897b885f43bce9b8d4bec18b8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 7559589500255855002, guid: 176f13a897b885f43bce9b8d4bec18b8,
         type: 3}
@@ -20396,6 +20406,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Patroller 3
       objectReference: {fileID: 0}
+    - target: {fileID: 4319831695310819052, guid: 176f13a897b885f43bce9b8d4bec18b8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 7559589500255855002, guid: 176f13a897b885f43bce9b8d4bec18b8,
         type: 3}
       propertyPath: targetList.Array.size
@@ -20545,10 +20560,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 971664919081330709, guid: 176f13a897b885f43bce9b8d4bec18b8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 2917115482071744664, guid: 176f13a897b885f43bce9b8d4bec18b8,
         type: 3}
       propertyPath: m_Name
       value: Patroller 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4319831695310819052, guid: 176f13a897b885f43bce9b8d4bec18b8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 7559589500255855002, guid: 176f13a897b885f43bce9b8d4bec18b8,
         type: 3}
@@ -25816,6 +25841,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Patroller 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4319831695310819052, guid: 176f13a897b885f43bce9b8d4bec18b8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 7559589500255855002, guid: 176f13a897b885f43bce9b8d4bec18b8,
         type: 3}

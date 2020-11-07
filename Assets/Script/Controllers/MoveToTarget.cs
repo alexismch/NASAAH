@@ -10,6 +10,12 @@ namespace Script.Controllers
         [SerializeField] Movement movement;
         [SerializeField] private GameObject target;
 
+        public GameObject Target
+        {
+            get => target;
+            set => target = value;
+        }
+
         private void Awake()
         {
             gameObject.tag = "Enemy";
@@ -27,11 +33,6 @@ namespace Script.Controllers
                 var vInput = direction.y;
                 movement.Move(hInput, vInput);
             }
-        }
-
-        public void SetTarget(GameObject newTarget)
-        {
-            target = newTarget;
         }
     }
 }

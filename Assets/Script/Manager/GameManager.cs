@@ -40,7 +40,6 @@ namespace Script.Manager
 
         public static void SetEffect(string effect)
         {
-            Debug.Log(effect);
             switch (effect)
             {
                 case "SpeedBoost":
@@ -83,7 +82,22 @@ namespace Script.Manager
         private static void Invisibility()
         {
             Debug.Log("Invisible");
-            _player.layer = 12;
+            GameObject[] gameObjects = GameObject.FindGameObjectsWithTag("Enemy");
+            foreach (var o in gameObjects)
+            {
+                MoveToTarget moveToTarget = o.GetComponentInParent<MoveToTarget>();
+                if (moveToTarget.Target != null && moveToTarget.Target.CompareTag("Player"))
+                    moveToTarget.Target = o;
+            }
+            _player.tag = "PlayerInvisible";
+            _instance.StartCoroutine(CancelInvisibility());
+        }
+
+        private static IEnumerator CancelInvisibility()
+        {
+            yield return new WaitForSeconds(20);
+            _player.tag = "Player";
+            Debug.Log("Visible");
         }
 
 

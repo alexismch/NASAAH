@@ -21,7 +21,7 @@ namespace Script.Controllers
             {
                 _isMoving = true;
                 var player = GameManager.Player;
-                _moveToTarget.SetTarget(player);
+                _moveToTarget.Target = player;
             }
         }
 

@@ -28,6 +28,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: kkhuaite Follow Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 4319831695310819052, guid: 176f13a897b885f43bce9b8d4bec18b8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 7897053677944643566, guid: 176f13a897b885f43bce9b8d4bec18b8,
         type: 3}
       propertyPath: m_LocalPosition.x

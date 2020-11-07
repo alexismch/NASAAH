@@ -20,7 +20,7 @@ namespace Script.Controllers
             gameObject.tag = "Player";
             _moveToTarget = GetComponent<MoveToTarget>();
             _currentTarget = targetList[_indexListTarget];
-            _moveToTarget.SetTarget(_currentTarget);
+            _moveToTarget.Target = _currentTarget;
             _currentTargetTransform = _currentTarget.transform;
             _selfTransform = gameObject.transform;
         }
@@ -31,7 +31,7 @@ namespace Script.Controllers
             {
                 _indexListTarget = (_indexListTarget + 1) % targetList.Length;
                 _currentTarget = targetList[_indexListTarget];
-                _moveToTarget.SetTarget(_currentTarget);
+                _moveToTarget.Target = _currentTarget;
                 _currentTargetTransform = _currentTarget.transform;
             }
         }
@@ -41,7 +41,7 @@ namespace Script.Controllers
             if (other.CompareTag("Player"))
             {
                 _isInPatrol = false;
-                _moveToTarget.SetTarget(GameManager.Player);
+                _moveToTarget.Target = GameManager.Player;
             }
         }
     }

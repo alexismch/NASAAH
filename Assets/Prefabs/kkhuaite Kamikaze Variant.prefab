@@ -35,7 +35,12 @@ PrefabInstance:
     - target: {fileID: 2917115482071744664, guid: 176f13a897b885f43bce9b8d4bec18b8,
         type: 3}
       propertyPath: m_Name
-      value: kkhuaite Kamikaze
+      value: kkhuaite Kamikaze Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 4319831695310819052, guid: 176f13a897b885f43bce9b8d4bec18b8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 5176308900301341399, guid: 176f13a897b885f43bce9b8d4bec18b8,
         type: 3}

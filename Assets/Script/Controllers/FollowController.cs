@@ -10,7 +10,7 @@ namespace Script.Controllers
         private void Awake()
         {
             _moveToTarget = GetComponent<MoveToTarget>();
-            _moveToTarget.SetTarget(GameManager.Player);
+            _moveToTarget.Target = GameManager.Player;
         }
     }
 }
