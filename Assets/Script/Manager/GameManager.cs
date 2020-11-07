@@ -98,7 +98,7 @@ namespace Script.Manager
 
         private static IEnumerator CancelInvisibility()
         {
-            yield return new WaitForSeconds(20);
+            yield return new WaitForSeconds(10);
             _player.tag = "Player";
             var color = _player.GetComponentInChildren<SpriteRenderer>().color;
             color.a = 1f;
@@ -116,7 +116,7 @@ namespace Script.Manager
 
         private static IEnumerator CancelInvincibility()
         {
-            yield return new WaitForSeconds(20);
+            yield return new WaitForSeconds(5);
             _player.GetComponent<PlayerController>().IsInvincible = false;
             Debug.Log("Killable");
         }
