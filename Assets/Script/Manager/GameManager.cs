@@ -34,7 +34,6 @@ namespace Script.Manager
 
         public void NextLevel(string nextLevel)
         {
-            Debug.Log("Helelo");
             LoadScene(nextLevel);
             ScoreManager.SetScore(0);
             ObjectPool.ResetPools();
@@ -152,6 +151,9 @@ namespace Script.Manager
 
         public void EndOfLevel()
         {
+            GameObject[] gameObjects = GameObject.FindGameObjectsWithTag("Enemy");
+            foreach (var o in gameObjects)
+                o.SetActive(false);
             GameObject mainCamera = GameObject.FindGameObjectWithTag("MainCMDezoom");
             mainCamera.GetComponent<CinemachineVirtualCamera>().enabled = true;
         }
