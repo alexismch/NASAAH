@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using Cinemachine;
 using Script.Controllers;
 using Script.Manager;
 using UnityEngine;
@@ -24,10 +25,10 @@ namespace Script.Manager
         {
         }
 
-        public void NextLevel2()
+        public void NextLevel(string nextLevel)
         {
             Debug.Log("Helelo");
-            LoadScene("Level2");
+            LoadScene(nextLevel);
             ScoreManager.SetScore(0);
         }
 
@@ -110,6 +111,12 @@ namespace Script.Manager
             Debug.Log("Speed " + value);
             DynamicMovement dynamicMovement = _player.GetComponent<DynamicMovement>();
             dynamicMovement.Speed += value;
+        }
+
+        public void EndOfLevel()
+        {
+            GameObject mainCamera = GameObject.FindGameObjectWithTag("MainCMDezoom");
+            mainCamera.GetComponent<CinemachineVirtualCamera>().enabled = true;
         }
     }
 }

@@ -16,7 +16,7 @@ namespace Script.Manager
         private void OnEnable()
         {
             UpdateScore(GameManager.Instance.ScoreManager.Score);
-            GameManager.Instance.ScoreManager.onScoreChange += UpdateScore;
+            GameManager.Instance.ScoreManager.ONScoreChange += UpdateScore;
         }
 
         private void UpdateScore(int value)

@@ -1,42 +1,53 @@
 ﻿using System;
+using System.Collections;
 using UnityEngine;
 
 namespace Script.Manager
 {
     public class ScoreManager : MonoBehaviour
     {
-        [SerializeField] private int _currentScore;
-        public Action<int> onScoreChange;
-        public int Score => _currentScore;
+        [SerializeField] private string nextLevel;
+        [SerializeField] private int currentScore;
+        public Action<int> ONScoreChange;
+
+        public int Score => currentScore;
 
         private void Awake()
         {
-            _currentScore = 0;
+            currentScore = 0;
         }
 
         private void OnDisable()
         {
-            _currentScore = 0;
+            currentScore = 0;
         }
 
         private void Update()
         {
-            if (_currentScore == 10)
+            if (currentScore == 10)
             {
-                GameManager.Instance.NextLevel2();
+                currentScore = 0;
+                GameManager.Instance.EndOfLevel();
+                StartCoroutine(WaitToChangeLevel());
             }
+        }
+
+        private IEnumerator WaitToChangeLevel()
+        {
+            yield return new WaitForSeconds(3);
+            GameManager.Instance.NextLevel(nextLevel);
         }
 
 
         public void SetScore(int score)
         {
-            _currentScore = score;
-            onScoreChange(_currentScore);
+            currentScore = score;
+            ONScoreChange(currentScore);
         }
 
         public void AddScore(int value)
         {
-            SetScore(_currentScore + value);
+            SetScore(currentScore + value);
         }
     }
 }
