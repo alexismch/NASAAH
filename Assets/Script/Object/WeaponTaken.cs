@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Script.Object
 {
-    public class WeaponTaked : MonoBehaviour
+    public class WeaponTaken : MonoBehaviour
     {
         private void OnTriggerEnter2D(Collider2D other)
         {

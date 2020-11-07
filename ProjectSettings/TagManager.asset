@@ -8,6 +8,8 @@ TagManager:
   - MainCM
   - MainCMDezoom
   - PlayerInvisible
+  - Diamond
+  - Checkpoint
   layers:
   - Default
   - TransparentFX
