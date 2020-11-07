@@ -25,10 +25,10 @@ namespace Script.Manager
         {
         }
 
-        public void NextLevel2()
+        public void NextLevel(string nextLevel)
         {
             Debug.Log("Helelo");
-            LoadScene("Level2");
+            LoadScene(nextLevel);
             ScoreManager.SetScore(0);
         }
 

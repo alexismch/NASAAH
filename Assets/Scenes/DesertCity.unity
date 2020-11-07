@@ -25605,7 +25605,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd6b962e7e694ef4881f795ccbd26d9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _currentScore: 0
+  nextLevel: kkuhaite
+  currentScore: 0
 --- !u!1 &1657757968
 GameObject:
   m_ObjectHideFlags: 0
