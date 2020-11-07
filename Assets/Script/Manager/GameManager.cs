@@ -84,13 +84,18 @@ namespace Script.Manager
             if (_player.GetComponent<PlayerController>().IsInvincible)
             {
                 Debug.Log("No Killed");
-
                 return;
             }
 
             PlayerAnimation.Death();
-            Destroy(_player);
+            _instance.StartCoroutine(KillPlayer());
             Debug.Log("Killed");
+        }
+
+        private static IEnumerator KillPlayer()
+        {
+            yield return new WaitForSeconds(30/60f);
+            Destroy(_player);
         }
 
         private static void Invisibility()
@@ -121,8 +126,7 @@ namespace Script.Manager
             _player.GetComponentInChildren<SpriteRenderer>().color = color;
             Debug.Log("Visible");
         }
-
-
+        
         private static void Invincibility()
         {
             Debug.Log("Invincibility");
