@@ -31,7 +31,7 @@ namespace Script.Object
                 diamond.transform.localPosition = pos;
                 
                 var j = 0;
-                while (j < 15 && (IsBlocked(diamond) || IsRadiusClear(diamond)))
+                while (j < 15 && (IsBlocked(diamond)))
                 {
                     j++;
                     Debug.Log("'doit bouger" + i);
