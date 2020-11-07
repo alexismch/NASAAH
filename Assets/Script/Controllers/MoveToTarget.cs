@@ -10,6 +10,11 @@ namespace Script.Controllers
         [SerializeField] Movement movement;
         [SerializeField] private GameObject target;
 
+        private void Awake()
+        {
+            gameObject.tag = "Enemy";
+        }
+
         // Update is called once per frame
         void Update()
         {
