@@ -1,5 +1,18 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &356649508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4473702629703526067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf31f696cc669d9439490a01c22d5a4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0
 --- !u!114 &93191194833133479
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24,6 +37,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: kkhuaite Kamikaze
       objectReference: {fileID: 0}
+    - target: {fileID: 5176308900301341399, guid: 176f13a897b885f43bce9b8d4bec18b8,
+        type: 3}
+      propertyPath: layerMask.m_Bits
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7897053677944643566, guid: 176f13a897b885f43bce9b8d4bec18b8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -32,7 +50,7 @@ PrefabInstance:
     - target: {fileID: 7897053677944643566, guid: 176f13a897b885f43bce9b8d4bec18b8,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -4.09
       objectReference: {fileID: 0}
     - target: {fileID: 7897053677944643566, guid: 176f13a897b885f43bce9b8d4bec18b8,
         type: 3}
