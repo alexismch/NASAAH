@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 101797962016552746}
   - component: {fileID: 5176308900301341399}
+  - component: {fileID: 3947926537350309503}
+  - component: {fileID: 947206173981694841}
   m_Layer: 0
   m_Name: Collision With Decor Detector
   m_TagString: Untagged
@@ -46,6 +48,38 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 2048
+--- !u!58 &3947926537350309503
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 971664919081330709}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.35}
+  serializedVersion: 2
+  m_Radius: 0.4
+--- !u!70 &947206173981694841
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 971664919081330709}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.02, y: 0}
+  m_Size: {x: 0.6, y: 1.4}
+  m_Direction: 0
 --- !u!1 &2917115482071744664
 GameObject:
   m_ObjectHideFlags: 0
@@ -283,7 +317,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1086097495
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 565f07a1d23a9764e89b3866c46fe664, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

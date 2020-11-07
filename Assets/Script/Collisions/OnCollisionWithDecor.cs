@@ -20,6 +20,9 @@ namespace Script.Collisions
             if ((layerMask & 1 << other.gameObject.layer) == 1 << other.gameObject.layer)
             {
                 _dynamicMovement.Speed /= 2;
+                var color = gameObject.GetComponentInParent<Rigidbody2D>().GetComponentInChildren<SpriteRenderer>().color;
+                color.a = 0.5f;
+                gameObject.GetComponentInParent<Rigidbody2D>().GetComponentInChildren<SpriteRenderer>().color = color;
             }
         }
 
@@ -28,6 +31,9 @@ namespace Script.Collisions
             if ((layerMask & 1 << other.gameObject.layer) == 1 << other.gameObject.layer)
             {
                 _dynamicMovement.Speed *= 2;
+                var color = gameObject.GetComponentInParent<Rigidbody2D>().GetComponentInChildren<SpriteRenderer>().color;
+                color.a = 1f;
+                gameObject.GetComponentInParent<Rigidbody2D>().GetComponentInChildren<SpriteRenderer>().color = color;
             }
         }
     }
