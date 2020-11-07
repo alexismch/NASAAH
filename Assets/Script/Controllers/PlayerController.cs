@@ -1,4 +1,5 @@
 ﻿using System;
+using Script.Animation;
 using UnityEngine;
 
 namespace Script.Controllers
@@ -7,6 +8,7 @@ namespace Script.Controllers
     {
         [SerializeField] Movement movement;
         [SerializeField] private bool _isInvincible = false;
+        private bool _isArmed;
 
         private void Awake()
         {
@@ -19,12 +21,22 @@ namespace Script.Controllers
             var hInput = Input.GetAxisRaw("Horizontal");
             var vInput = Input.GetAxisRaw("Vertical");
             movement.Move(hInput, vInput);
+            PlayerAnimation.Walk(Mathf.Abs(hInput)+Mathf.Abs(vInput));
+            if(Input.GetButtonDown("Fire1") && _isArmed)
+                PlayerAnimation.Attack();
+            
         }
 
         public bool IsInvincible
         {
             get => _isInvincible;
             set => _isInvincible = value;
+        }
+
+        public void TakeWeapon()
+        {
+            _isArmed = true;
+            PlayerAnimation.Take();
         }
     }
 }

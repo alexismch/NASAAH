@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using Cinemachine;
+using Script.Animation;
 using Script.Controllers;
 using Script.Manager;
 using UnityEngine;
@@ -82,6 +83,7 @@ namespace Script.Manager
                 return;
             }
 
+            PlayerAnimation.Death();
             Destroy(_player);
             Debug.Log("Killed");
         }
@@ -144,6 +146,11 @@ namespace Script.Manager
         {
             GameObject mainCamera = GameObject.FindGameObjectWithTag("MainCMDezoom");
             mainCamera.GetComponent<CinemachineVirtualCamera>().enabled = true;
+        }
+
+        public static void TakeWeapon()
+        {
+            _player.GetComponent<PlayerController>().TakeWeapon();
         }
     }
 }
