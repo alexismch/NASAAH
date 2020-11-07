@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using Cinemachine;
+using Script.Animation;
 using Script.Controllers;
 using Script.Manager;
 using UnityEngine;
@@ -76,6 +77,7 @@ namespace Script.Manager
                 return;
             }
 
+            PlayerAnimation.Death();
             Destroy(_player);
             Debug.Log("Killed");
         }

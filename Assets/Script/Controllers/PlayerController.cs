@@ -8,12 +8,10 @@ namespace Script.Controllers
     {
         [SerializeField] Movement movement;
         [SerializeField] private bool _isInvincible = false;
-        private PlayerAnimation _playerAnimation;
 
         private void Awake()
         {
             gameObject.tag = "Player";
-            _playerAnimation = GetComponent<PlayerAnimation>();
         }
 
         // Update is called once per frame
@@ -22,9 +20,9 @@ namespace Script.Controllers
             var hInput = Input.GetAxisRaw("Horizontal");
             var vInput = Input.GetAxisRaw("Vertical");
             movement.Move(hInput, vInput);
-            _playerAnimation.Walk(Mathf.Abs(hInput)+Mathf.Abs(vInput));
+            PlayerAnimation.Walk(Mathf.Abs(hInput)+Mathf.Abs(vInput));
             if(Input.GetButtonDown("Fire1"))
-                _playerAnimation.Attack();
+                PlayerAnimation.Attack();
             
         }
 

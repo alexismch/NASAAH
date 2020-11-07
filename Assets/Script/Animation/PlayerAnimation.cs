@@ -5,7 +5,7 @@ namespace Script.Animation
 {
     public class PlayerAnimation : MonoBehaviour
     {
-        private Animator _animator;
+        private static Animator _animator;
         private static readonly int Speed = Animator.StringToHash("Speed");
 
         private void Awake()
@@ -13,14 +13,19 @@ namespace Script.Animation
             _animator = GetComponent<Animator>();
         }
 
-        public void Walk(float movement)
+        public static void Walk(float movement)
         {
             _animator.SetFloat(Speed, movement);
         }
 
-        public void Attack()
+        public static void Attack()
         {
             _animator.SetTrigger("Attack");
+        }
+
+        public static void Death()
+        {
+            _animator.SetTrigger("Death");
         }
     }
 }
