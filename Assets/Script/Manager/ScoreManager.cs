@@ -24,7 +24,7 @@ namespace Script.Manager
 
         private void Update()
         {
-            if (currentScore == 1)
+            if (currentScore == 10)
             {
                 currentScore = 0;
                 GameManager.Instance.EndOfLevel();
