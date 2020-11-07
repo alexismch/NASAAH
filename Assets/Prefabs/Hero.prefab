@@ -187,7 +187,7 @@ MonoBehaviour:
   movement: {fileID: 1899999407}
   _isInvincible: 0
   arrowController: {fileID: 312057250}
-  _isArmed: 1
+  _isArmed: 0
 --- !u!114 &1899999407
 MonoBehaviour:
   m_ObjectHideFlags: 0

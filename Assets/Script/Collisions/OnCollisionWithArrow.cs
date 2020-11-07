@@ -6,15 +6,21 @@ namespace Script.Collisions
     public class OnCollisionWithArrow : MonoBehaviour
 
     {
+        private int force = 0;
+        private Quaternion q;
+
+        public void SetForce(int force)
+        {
+            this.force = force;
+        }
         // Start is called before the first frame update
-        [SerializeField] private LayerMask layerMask;
         private void OnTriggerEnter2D(Collider2D other)
         {
-            if ((layerMask & 1 << other.gameObject.layer) == 1 << other.gameObject.layer)
-            {
-                gameObject.TryRelease();
-                //other.TryRelease();
-            }
+          gameObject.TryRelease();
+          var gameObjectBody = other.attachedRigidbody.gameObject;
+          if(!gameObjectBody.CompareTag("Enemy")) return;
+          
+
         }
 
         // Update is called once per frame

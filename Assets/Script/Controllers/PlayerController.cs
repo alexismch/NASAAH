@@ -11,10 +11,13 @@ namespace Script.Controllers
         [SerializeField] private ArrowController arrowController;
         private Vector3 _worldPosition;
         [SerializeField] private bool _isArmed;
+        private int force;
+        
 
         private void Awake()
         {
             gameObject.tag = "Player";
+            force = 1;
         }
 
         // Update is called once per frame
@@ -33,7 +36,7 @@ namespace Script.Controllers
                 pos.z = transform.position.z - Camera.main.transform.position.z;
                 pos = Camera.main.ScreenToWorldPoint(pos);
                 var q = Quaternion.FromToRotation(Vector3.up, pos - transform.position);
-                arrowController.Fire(q);
+                arrowController.Fire(q,force);
                 
                 
                
