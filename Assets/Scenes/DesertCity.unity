@@ -20385,16 +20385,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Patroller 3
       objectReference: {fileID: 0}
-    - target: {fileID: 2917115482071744664, guid: 176f13a897b885f43bce9b8d4bec18b8,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4319831695310819052, guid: 176f13a897b885f43bce9b8d4bec18b8,
-        type: 3}
-      propertyPath: m_TagString
-      value: Enemy
-      objectReference: {fileID: 0}
     - target: {fileID: 7559589500255855002, guid: 176f13a897b885f43bce9b8d4bec18b8,
         type: 3}
       propertyPath: targetList.Array.size
@@ -33464,36 +33454,6 @@ MonoBehaviour:
         m_Calls: []
   m_LegacyBlendHint: 0
   m_ComponentOwner: {fileID: 1242829492}
---- !u!1 &1227640414
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1227640415}
-  m_Layer: 0
-  m_Name: ArrowController
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1227640415
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1227640414}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.36267617, y: 0.6121604, z: -0.044982385}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 25
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1242829491
 GameObject:
   m_ObjectHideFlags: 3
@@ -34198,11 +34158,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4319831695310819052, guid: 176f13a897b885f43bce9b8d4bec18b8,
-        type: 3}
-      propertyPath: m_TagString
-      value: Enemy
-      objectReference: {fileID: 0}
     - target: {fileID: 7559589500255855002, guid: 176f13a897b885f43bce9b8d4bec18b8,
         type: 3}
       propertyPath: targetList.Array.size
@@ -34720,10 +34675,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1899999404, guid: 251028fef2de57449980b57eee432f5a, type: 3}
-      propertyPath: _isArmed
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5212006821758746437, guid: 251028fef2de57449980b57eee432f5a,
         type: 3}
       propertyPath: m_LocalPosition.x

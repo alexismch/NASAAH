@@ -10,10 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 6102831083016481190}
   - component: {fileID: 6102831083016481188}
-  - component: {fileID: 2511413735294548574}
   - component: {fileID: 6102831083016481187}
   - component: {fileID: 6102831083016481186}
   - component: {fileID: 1610796054}
+  - component: {fileID: 2178864941945223498}
   m_Layer: 8
   m_Name: Diamond
   m_TagString: Diamond
@@ -49,47 +49,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   points: 1
---- !u!114 &2511413735294548574
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6102831083016481192}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0d7a01b8fa4e1c4bb45a95e9f767938, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  layerMask:
-    serializedVersion: 2
-    m_Bits: 512
-  onDestroyed:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1610796054}
-        m_MethodName: ChooseEffect
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 6102831083016481188}
-        m_MethodName: ScorePoints
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  affectedObject: 1
 --- !u!50 &6102831083016481187
 Rigidbody2D:
   serializedVersion: 4
@@ -140,6 +99,46 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   effectsTable: {fileID: 11400000, guid: e79207da4789fb54392815aca5fc1f24, type: 2}
+--- !u!114 &2178864941945223498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6102831083016481192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f43c284ee3c8f4421956e6752aa72624, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onDestroyed:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1610796054}
+        m_MethodName: ChooseEffect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 6102831083016481188}
+        m_MethodName: ScorePoints
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 512
 --- !u!1 &6102831084063278157
 GameObject:
   m_ObjectHideFlags: 0
