@@ -48,6 +48,10 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 2048
+  onDestroyed:
+    m_PersistentCalls:
+      m_Calls: []
+  affectedObject: 2
 --- !u!58 &3947926537350309503
 CircleCollider2D:
   m_ObjectHideFlags: 0

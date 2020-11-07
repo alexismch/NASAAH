@@ -55,7 +55,7 @@ PrefabInstance:
     - target: {fileID: 1796994573923062976, guid: 6bfdab959dabb8244beaeeb32595f4c3,
         type: 3}
       propertyPath: m_Name
-      value: kkhuaite Turret Variant (3)
+      value: kkhuaite Turret Variant
       objectReference: {fileID: 0}
     - target: {fileID: 1796994573923062976, guid: 6bfdab959dabb8244beaeeb32595f4c3,
         type: 3}
@@ -126,6 +126,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8601428461463492239, guid: 6bfdab959dabb8244beaeeb32595f4c3,
+        type: 3}
+      propertyPath: affectedObject
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3498056764487185516, guid: 6bfdab959dabb8244beaeeb32595f4c3, type: 3}

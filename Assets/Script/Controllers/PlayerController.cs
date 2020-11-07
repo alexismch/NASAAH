@@ -9,6 +9,8 @@ namespace Script.Controllers
         [SerializeField] Movement movement;
         [SerializeField] private bool _isInvincible = false;
         private PlayerAnimation _playerAnimation;
+        [SerializeField] private ArrowController arrowController;
+        private Vector3 _worldPosition;
 
         private void Awake()
         {
@@ -23,9 +25,22 @@ namespace Script.Controllers
             var vInput = Input.GetAxisRaw("Vertical");
             movement.Move(hInput, vInput);
             _playerAnimation.Walk(Mathf.Abs(hInput)+Mathf.Abs(vInput));
-            if(Input.GetButtonDown("Fire1"))
+            if (Input.GetButtonDown("Fire1"))
+            {
                 _playerAnimation.Attack();
-            
+                
+                
+                var pos = Input.mousePosition;
+                pos.z = transform.position.z - Camera.main.transform.position.z;
+                pos = Camera.main.ScreenToWorldPoint(pos);
+                var q = Quaternion.FromToRotation(Vector3.up, pos - transform.position);
+                arrowController.Fire(q);
+                
+                
+               
+            }
+                
+
         }
 
         public bool IsInvincible
