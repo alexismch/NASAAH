@@ -9,7 +9,7 @@ namespace Script.Manager
     {
         [SerializeField] private ScoreManager scoreManager;
         public ScoreManager ScoreManager => scoreManager;
-        [SerializeField] private static GameObject player;
+        [SerializeField] private GameObject player;
         public GameObject Player => player;
 
         protected override void Initialize()
@@ -64,26 +64,26 @@ namespace Script.Manager
 
         public static void Kill()
         {
-            if (player.GetComponent<PlayerController>().IsInvincible)
+            /*if (player.GetComponent<PlayerController>().IsInvincible)
             {
                 Debug.Log("No Killed");
 
                 return;
-            }
-            Destroy(player);
+            }*/
+            //Destroy(player);
             Debug.Log("Killed");
         }
 
         private static void Invisibility()
         {
             Debug.Log("Invisible");
-            player.layer = 12;
+            //player.layer = 12;
         }
 
         private static void Invincibility()
         {
             Debug.Log("Invincibility");
-            player.GetComponent<PlayerController>().IsInvincible = true;
+            //player.GetComponent<PlayerController>().IsInvincible = true;
         }
 
         private static void ChangeForce(int value)
@@ -94,7 +94,7 @@ namespace Script.Manager
         private static void ChangeSpeed(float value)
         {
             Debug.Log("Speed " + value);
-            player.GetComponent<DynamicMovement>().SetSpeed(value);
+            //player.GetComponent<DynamicMovement>().SetSpeed(value);
         }
     }
 }

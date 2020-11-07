@@ -1,4 +1,5 @@
-﻿using Script.Manager;
+﻿using System;
+using Script.Manager;
 using UnityEngine;
 
 namespace Script.Controllers
@@ -9,6 +10,7 @@ namespace Script.Controllers
         [SerializeField] Movement movement;
         [SerializeField] private GameObject target;
         
+
         // Update is called once per frame
         void Update()
         {
