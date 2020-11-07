@@ -1,8 +1,10 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using Cinemachine;
 using Script.Animation;
 using Script.Controllers;
 using Script.Manager;
+using Script.Pooling;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -14,6 +16,9 @@ namespace Script.Manager
         [SerializeField] private ScoreManager scoreManager;
         public ScoreManager ScoreManager => scoreManager;
         private static GameObject _player;
+        private static bool _playerIsArmed = false;
+
+        public static bool PlayerIsArmed => _playerIsArmed;
 
         public static GameObject Player => _player;
 
@@ -32,6 +37,7 @@ namespace Script.Manager
             Debug.Log("Helelo");
             LoadScene(nextLevel);
             ScoreManager.SetScore(0);
+            ObjectPool.ResetPools();
         }
 
         public void LoadScene(string sceneName)
@@ -152,6 +158,7 @@ namespace Script.Manager
 
         public static void TakeWeapon()
         {
+            _playerIsArmed = true;
             _player.GetComponent<PlayerController>().TakeWeapon();
         }
     }

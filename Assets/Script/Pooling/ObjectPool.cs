@@ -14,6 +14,11 @@ namespace Script.Pooling
         private List<GameObject> _trackedInstances = new List<GameObject>(100);
         private static Dictionary<GameObject, ObjectPool> _pools = new Dictionary<GameObject, ObjectPool>(10);
 
+        public static void ResetPools()
+        {
+            _pools = new Dictionary<GameObject, ObjectPool>(10);
+        }
+
         public static ObjectPool GetPool(GameObject pooledObject)
         {
             if (_pools.TryGetValue(pooledObject, out var pool) == false)

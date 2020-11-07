@@ -222,7 +222,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: k-k w8
+  m_text: Game ...over...
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3fd9247877c49e14c9e9f337e760d739, type: 2}
   m_sharedMaterial: {fileID: 7534017398854759374, guid: 3fd9247877c49e14c9e9f337e760d739,
@@ -356,7 +356,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Start
+  m_text: Restart
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3fd9247877c49e14c9e9f337e760d739, type: 2}
   m_sharedMaterial: {fileID: 7534017398854759374, guid: 3fd9247877c49e14c9e9f337e760d739,
@@ -1037,7 +1037,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Ok
+          m_StringArgument: Discover
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1910729210

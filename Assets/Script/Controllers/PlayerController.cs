@@ -1,5 +1,6 @@
 ﻿using System;
 using Script.Animation;
+using Script.Manager;
 using UnityEngine;
 
 namespace Script.Controllers
@@ -18,6 +19,7 @@ namespace Script.Controllers
         {
             gameObject.tag = "Player";
             force = 1;
+            _isArmed = GameManager.PlayerIsArmed;
         }
 
         // Update is called once per frame
