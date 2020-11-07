@@ -59,6 +59,9 @@ GameObject:
   - component: {fileID: 121233460}
   - component: {fileID: 6697680756391901987}
   - component: {fileID: 2550137267025339793}
+  - component: {fileID: 4555635337065276965}
+  - component: {fileID: 8248196333092373060}
+  - component: {fileID: 7559589500255855002}
   m_Layer: 0
   m_Name: kkhuaite Patrol
   m_TagString: Untagged
@@ -151,6 +154,51 @@ CapsuleCollider2D:
   m_Offset: {x: -0.02, y: 0}
   m_Size: {x: 0.6, y: 1.4}
   m_Direction: 0
+--- !u!114 &4555635337065276965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2917115482071744664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf31f696cc669d9439490a01c22d5a4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
+--- !u!114 &8248196333092373060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2917115482071744664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2c684a1845c7f043a58a4724fb85ef8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movement: {fileID: 4555635337065276965}
+  target: {fileID: 0}
+--- !u!114 &7559589500255855002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2917115482071744664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 525d29ab67b97404db3b0d03875707f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetList: []
+  moveToTarget: {fileID: 8248196333092373060}
+  gameManager: {fileID: 0}
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 512
 --- !u!1 &4319831695310819052
 GameObject:
   m_ObjectHideFlags: 0
