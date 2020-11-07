@@ -9,7 +9,7 @@ namespace Script.Effects
         {
             Debug.Log("dans le knock");
             var t = gameObject.transform;
-            var dir = ((Vector2) ((t.position - OGPos)*0.05f*force));
+            var dir = ((Vector2) ((t.position - OGPos)).normalized)*0.1f*force;
             gameObject.GetComponent<Rigidbody2D>().AddForce(dir);
         }
     }
