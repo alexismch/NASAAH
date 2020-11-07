@@ -8,7 +8,10 @@ namespace Script.Controllers
     {
         private void OnTriggerEnter2D(Collider2D other)
         {
-            GameManager.Kill();
+            if (other.CompareTag("Player"))
+            {
+                GameManager.Kill();
+            }
         }
     }
 }

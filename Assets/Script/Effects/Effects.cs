@@ -11,6 +11,7 @@ namespace Script.Effects
         {
             string effect = effectsTable.ChooseEffect();
             if (effect != null)
+                Debug.Log("Launch effect : " + effect);
                 GameManager.SetEffect(effect);
         }
     }

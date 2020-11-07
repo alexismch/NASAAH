@@ -13,6 +13,7 @@ namespace Script.Manager
         [SerializeField] private ScoreManager scoreManager;
         public ScoreManager ScoreManager => scoreManager;
         private static GameObject _player;
+
         public static GameObject Player => _player;
 
         protected override void Initialize()
@@ -40,7 +41,6 @@ namespace Script.Manager
 
         public static void SetEffect(string effect)
         {
-            Debug.Log(effect);
             switch (effect)
             {
                 case "SpeedBoost":
@@ -83,7 +83,28 @@ namespace Script.Manager
         private static void Invisibility()
         {
             Debug.Log("Invisible");
-            _player.layer = 12;
+            GameObject[] gameObjects = GameObject.FindGameObjectsWithTag("Enemy");
+            foreach (var o in gameObjects)
+            {
+                MoveToTarget moveToTarget = o.GetComponent<MoveToTarget>();
+                if (moveToTarget.Target != null && moveToTarget.Target.CompareTag("Player"))
+                    moveToTarget.Target = o;
+            }
+            _player.tag = "PlayerInvisible";
+            var color = _player.GetComponentInChildren<SpriteRenderer>().color;
+            color.a = 0.5f;
+            _player.GetComponentInChildren<SpriteRenderer>().color = color;
+            _instance.StartCoroutine(CancelInvisibility());
+        }
+
+        private static IEnumerator CancelInvisibility()
+        {
+            yield return new WaitForSeconds(10);
+            _player.tag = "Player";
+            var color = _player.GetComponentInChildren<SpriteRenderer>().color;
+            color.a = 1f;
+            _player.GetComponentInChildren<SpriteRenderer>().color = color;
+            Debug.Log("Visible");
         }
 
 
@@ -96,7 +117,7 @@ namespace Script.Manager
 
         private static IEnumerator CancelInvincibility()
         {
-            yield return new WaitForSeconds(20);
+            yield return new WaitForSeconds(5);
             _player.GetComponent<PlayerController>().IsInvincible = false;
             Debug.Log("Killable");
         }

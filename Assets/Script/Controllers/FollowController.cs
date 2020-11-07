@@ -10,7 +10,20 @@ namespace Script.Controllers
         private void Awake()
         {
             _moveToTarget = GetComponent<MoveToTarget>();
-            _moveToTarget.SetTarget(GameManager.Player);
+        }
+
+        private void Start()
+        {
+            if(!_moveToTarget.Target)
+                _moveToTarget.Target = GameManager.Player;
+        }
+
+        private void OnTriggerEnter2D(Collider2D other)
+        {
+            if (other.CompareTag("Player"))
+            {
+                _moveToTarget.Target = GameManager.Player;
+            }
         }
     }
 }
