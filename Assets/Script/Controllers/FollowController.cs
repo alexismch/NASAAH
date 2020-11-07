@@ -7,6 +7,7 @@ namespace Script.Controllers
     public class FollowController : MonoBehaviour
     {
         private MoveToTarget _moveToTarget;
+
         private void Awake()
         {
             _moveToTarget = GetComponent<MoveToTarget>();
@@ -14,7 +15,7 @@ namespace Script.Controllers
 
         private void Start()
         {
-            if(!_moveToTarget.Target)
+            if (!_moveToTarget.Target)
                 _moveToTarget.Target = GameManager.Player;
         }
 
