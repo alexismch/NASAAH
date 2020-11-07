@@ -40,6 +40,12 @@ namespace Script.Manager
             var asyncload = SceneManager.LoadSceneAsync(sceneName);
         }
 
+
+        public void ExitGame()
+        {
+            Application.Quit();
+        }
+        
         public static void SetEffect(string effect)
         {
             switch (effect)
