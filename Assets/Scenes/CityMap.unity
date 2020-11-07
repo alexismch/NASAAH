@@ -13182,11 +13182,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: kkhuaite Kamikaze Variant (5)
       objectReference: {fileID: 0}
-    - target: {fileID: 4473702629703526067, guid: 0cac9f49795d5b04d9782659dfe780b7,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8933344780764412357, guid: 0cac9f49795d5b04d9782659dfe780b7,
         type: 3}
       propertyPath: m_LocalPosition.x
