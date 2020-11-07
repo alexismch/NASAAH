@@ -19,7 +19,7 @@ namespace Script.Collisions
         {
             if ((layerMask & 1 << other.gameObject.layer) == 1 << other.gameObject.layer)
             {
-                _dynamicMovement.SetSpeed(_dynamicMovement.Speed/2);
+                _dynamicMovement.Speed /= 2;
             }
         }
 
@@ -27,7 +27,7 @@ namespace Script.Collisions
         {
             if ((layerMask & 1 << other.gameObject.layer) == 1 << other.gameObject.layer)
             {
-                _dynamicMovement.SetSpeed(_dynamicMovement.Speed*2);
+                _dynamicMovement.Speed *= 2;
             }
         }
     }

@@ -12,7 +12,11 @@ namespace Script.Controllers
         
         [SerializeField] private float speed;
 
-        public float Speed => speed;
+        public float Speed
+        {
+            get => speed;
+            set => speed = value;
+        }
 
         private void Awake()
         {
@@ -31,11 +35,6 @@ namespace Script.Controllers
             velocity.x = _horizontal * speed;
             velocity.y = _vertical * speed;
             _rigidbody.velocity = velocity;
-        }
-
-        public void SetSpeed(float value)
-        {
-            speed = value;
         }
     }
 }
