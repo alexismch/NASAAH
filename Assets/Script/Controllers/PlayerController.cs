@@ -6,7 +6,7 @@ namespace Script.Controllers
     public class PlayerController : MonoBehaviour
     {
         [SerializeField] Movement movement;
-        private bool _isInvincible = false;
+        [SerializeField] private bool _isInvincible = false;
 
         private void Awake()
         {

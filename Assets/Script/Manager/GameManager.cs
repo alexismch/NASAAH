@@ -90,6 +90,9 @@ namespace Script.Manager
                     moveToTarget.Target = o;
             }
             _player.tag = "PlayerInvisible";
+            var color = _player.GetComponentInChildren<SpriteRenderer>().color;
+            color.a = 0.5f;
+            _player.GetComponentInChildren<SpriteRenderer>().color = color;
             _instance.StartCoroutine(CancelInvisibility());
         }
 
@@ -97,6 +100,9 @@ namespace Script.Manager
         {
             yield return new WaitForSeconds(20);
             _player.tag = "Player";
+            var color = _player.GetComponentInChildren<SpriteRenderer>().color;
+            color.a = 1f;
+            _player.GetComponentInChildren<SpriteRenderer>().color = color;
             Debug.Log("Visible");
         }
 
