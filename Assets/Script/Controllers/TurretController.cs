@@ -14,7 +14,7 @@ namespace Script.Controllers
 
         private void OnTriggerEnter2D(Collider2D other)
         {
-            if ((layerMask & 1 << other.gameObject.layer) == 1 << other.gameObject.layer)
+            if (other.CompareTag("Player"))
             {
                 _isMoving = true;
                 var player = gameManager.Player;
