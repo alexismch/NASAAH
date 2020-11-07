@@ -20,8 +20,7 @@ namespace Script.Controllers
             if (other.CompareTag("Player"))
             {
                 _isMoving = true;
-                var player = GameManager.Player;
-                _moveToTarget.Target = player;
+                _moveToTarget.Target = GameManager.Player;
             }
         }
 
