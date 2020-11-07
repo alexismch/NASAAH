@@ -48,10 +48,6 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 2048
-  onDestroyed:
-    m_PersistentCalls:
-      m_Calls: []
-  affectedObject: 2
 --- !u!58 &3947926537350309503
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -100,6 +96,7 @@ GameObject:
   - component: {fileID: 4555635337065276965}
   - component: {fileID: 8248196333092373060}
   - component: {fileID: 7559589500255855002}
+  - component: {fileID: 3000915353570169361}
   m_Layer: 10
   m_Name: kkhuaite Patrol
   m_TagString: Enemy
@@ -242,6 +239,18 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+--- !u!114 &3000915353570169361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2917115482071744664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb8b8f64e9d6a9141b94a09a98ffbe6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4319831695310819052
 GameObject:
   m_ObjectHideFlags: 0

@@ -16,11 +16,12 @@ namespace Script.Controllers
         {
             if (projectilePrefab.TryAcquire(out var projectile) == false)
                 return;
-            OnCollisionWithArrow coll = projectile.GetComponent<OnCollisionWithArrow>();
-            coll.SetForce(force);
+            
             var t = projectile.transform;
             t.position = projectileSpawner.position;
             t.rotation = q;
+            projectile.GetComponent<OnCollisionWithArrow>().SetForce(force);
+            projectile.GetComponent<OnCollisionWithArrow>().SetOGPos(t.position);
             var rb = projectile.GetComponent<Rigidbody2D>();
             rb.AddForce(projectile.transform.up * 500);
        
