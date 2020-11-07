@@ -1,4 +1,5 @@
-﻿using Script.Controllers;
+﻿using System.Collections;
+using Script.Controllers;
 using Script.Manager;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -7,14 +8,16 @@ namespace Script.Manager
 {
     public class GameManager : SingletonMb<GameManager>
     {
+        private static GameManager _instance;
         [SerializeField] private ScoreManager scoreManager;
         public ScoreManager ScoreManager => scoreManager;
         private static GameObject _player;
-        public GameObject Player => _player;
+        public static GameObject Player => _player;
 
         protected override void Initialize()
         {
             _player = GameObject.FindGameObjectWithTag("Player");
+            _instance = this;
         }
 
         protected override void Cleanup()
@@ -82,10 +85,19 @@ namespace Script.Manager
             _player.layer = 12;
         }
 
+
         private static void Invincibility()
         {
             Debug.Log("Invincibility");
             _player.GetComponent<PlayerController>().IsInvincible = true;
+            _instance.StartCoroutine(CancelInvincibility());
+        }
+
+        private static IEnumerator CancelInvincibility()
+        {
+            yield return new WaitForSeconds(20);
+            _player.GetComponent<PlayerController>().IsInvincible = false;
+            Debug.Log("Killable");
         }
 
         private static void ChangeForce(int value)

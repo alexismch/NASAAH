@@ -135,16 +135,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7559589500255855002, guid: 176f13a897b885f43bce9b8d4bec18b8,
         type: 3}
-      propertyPath: targetList.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7559589500255855002, guid: 176f13a897b885f43bce9b8d4bec18b8,
-        type: 3}
-      propertyPath: gameManager
-      value: 
-      objectReference: {fileID: 724835396}
-    - target: {fileID: 7559589500255855002, guid: 176f13a897b885f43bce9b8d4bec18b8,
-        type: 3}
       propertyPath: targetList.Array.data[0]
       value: 
       objectReference: {fileID: 1772597682}
@@ -158,6 +148,11 @@ PrefabInstance:
       propertyPath: targetList.Array.data[2]
       value: 
       objectReference: {fileID: 1289270562}
+    - target: {fileID: 7559589500255855002, guid: 176f13a897b885f43bce9b8d4bec18b8,
+        type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 724835396}
     - target: {fileID: 7897053677944643566, guid: 176f13a897b885f43bce9b8d4bec18b8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -467,6 +462,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Hero
+      objectReference: {fileID: 0}
+    - target: {fileID: 5452077261371529166, guid: 251028fef2de57449980b57eee432f5a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 251028fef2de57449980b57eee432f5a, type: 3}
