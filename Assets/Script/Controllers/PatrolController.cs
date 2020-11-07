@@ -7,9 +7,8 @@ namespace Script.Controllers
     public class PatrolController : MonoBehaviour
     {
         [SerializeField] private GameObject[] targetList;
-        [SerializeField] private MoveToTarget moveToTarget;
-        [SerializeField] private GameManager gameManager;
-
+        
+        private MoveToTarget _moveToTarget;
         private GameObject _currentTarget;
         private int _indexListTarget = 0;
         private Transform _currentTargetTransform;
@@ -18,8 +17,9 @@ namespace Script.Controllers
 
         private void Awake()
         {
+            _moveToTarget = GetComponent<MoveToTarget>();
             _currentTarget = targetList[_indexListTarget];
-            moveToTarget.SetTarget(_currentTarget);
+            _moveToTarget.SetTarget(_currentTarget);
             _currentTargetTransform = _currentTarget.transform;
             _selfTransform = gameObject.transform;
         }
@@ -30,7 +30,7 @@ namespace Script.Controllers
             {
                 _indexListTarget = (_indexListTarget + 1) % targetList.Length;
                 _currentTarget = targetList[_indexListTarget];
-                moveToTarget.SetTarget(_currentTarget);
+                _moveToTarget.SetTarget(_currentTarget);
                 _currentTargetTransform = _currentTarget.transform;
             }
         }
@@ -40,7 +40,7 @@ namespace Script.Controllers
             if (other.CompareTag("Player"))
             {
                 _isInPatrol = false;
-                moveToTarget.SetTarget(gameManager.Player);
+                _moveToTarget.SetTarget(GameManager.Player);
             }
         }
     }

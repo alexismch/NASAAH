@@ -62,7 +62,7 @@ GameObject:
   - component: {fileID: 4555635337065276965}
   - component: {fileID: 8248196333092373060}
   - component: {fileID: 7559589500255855002}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: kkhuaite Patrol
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -197,8 +197,24 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  moveToTarget: {fileID: 8248196333092373060}
-  gameManager: {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &4319831695310819052
 GameObject:
   m_ObjectHideFlags: 0
@@ -209,7 +225,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5404303823272635759}
   - component: {fileID: 1018653112551348829}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: kkhuaite model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
