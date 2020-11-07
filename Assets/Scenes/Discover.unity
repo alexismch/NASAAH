@@ -2241,12 +2241,12 @@ PrefabInstance:
     - target: {fileID: 1265036158541317134, guid: 1456f6db3943c274b896c6ea93c7a053,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.139931
+      value: -4.09
       objectReference: {fileID: 0}
     - target: {fileID: 1265036158541317134, guid: 1456f6db3943c274b896c6ea93c7a053,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.6936283
+      value: -0.47
       objectReference: {fileID: 0}
     - target: {fileID: 1265036158541317134, guid: 1456f6db3943c274b896c6ea93c7a053,
         type: 3}
@@ -2298,7 +2298,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bow
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 284572706, guid: 1456f6db3943c274b896c6ea93c7a053, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 1456f6db3943c274b896c6ea93c7a053, type: 3}
 --- !u!1001 &867473136
 PrefabInstance:
@@ -2371,6 +2372,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Diamond
+      objectReference: {fileID: 0}
+    - target: {fileID: 6102831083016481192, guid: 3cdc65834fcbcd745bf94801c6d96cfc,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3cdc65834fcbcd745bf94801c6d96cfc, type: 3}
@@ -2931,6 +2937,12 @@ MonoBehaviour:
         m_Calls: []
   m_LegacyBlendHint: 0
   m_ComponentOwner: {fileID: 1258983924}
+--- !u!1 &1325238773 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6102831083016481192, guid: 3cdc65834fcbcd745bf94801c6d96cfc,
+    type: 3}
+  m_PrefabInstance: {fileID: 867473136}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1470107882
 GameObject:
   m_ObjectHideFlags: 0
@@ -4041,6 +4053,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1899999404, guid: 251028fef2de57449980b57eee432f5a, type: 3}
+      propertyPath: _isArmed
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2578841277798833361, guid: 251028fef2de57449980b57eee432f5a,
         type: 3}
       propertyPath: m_IsActive
@@ -4113,6 +4129,25 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 251028fef2de57449980b57eee432f5a, type: 3}
+--- !u!1 &1845923773 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5630021208839439373, guid: 1456f6db3943c274b896c6ea93c7a053,
+    type: 3}
+  m_PrefabInstance: {fileID: 822593136}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1845923774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1845923773}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03365b710c954518bcba7238ed9636c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  diamond: {fileID: 1325238773}
 --- !u!1 &2064625516
 GameObject:
   m_ObjectHideFlags: 0
