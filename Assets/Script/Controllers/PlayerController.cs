@@ -10,7 +10,7 @@ namespace Script.Controllers
         [SerializeField] private bool _isInvincible = false;
         [SerializeField] private ArrowController arrowController;
         private Vector3 _worldPosition;
-        private bool _isArmed;
+        [SerializeField] private bool _isArmed;
 
         private void Awake()
         {
