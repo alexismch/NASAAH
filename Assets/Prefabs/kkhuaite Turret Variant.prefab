@@ -40,7 +40,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7296586d155ea8f4192da291f1bbaa92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveToTarget: {fileID: 4029684632002896952}
+  moveToTarget: {fileID: 5015648856738448979}
   gameManager: {fileID: 0}
   layerMask:
     serializedVersion: 2
@@ -67,15 +67,25 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 1796994573923062976, guid: 6bfdab959dabb8244beaeeb32595f4c3,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 3498056764487185513, guid: 6bfdab959dabb8244beaeeb32595f4c3,
+        type: 3}
+      propertyPath: m_AngularDrag
+      value: 0.05
+      objectReference: {fileID: 0}
     - target: {fileID: 6709343522291829686, guid: 6bfdab959dabb8244beaeeb32595f4c3,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.44
+      value: -6.58
       objectReference: {fileID: 0}
     - target: {fileID: 6709343522291829686, guid: 6bfdab959dabb8244beaeeb32595f4c3,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.41
+      value: 0.06
       objectReference: {fileID: 0}
     - target: {fileID: 6709343522291829686, guid: 6bfdab959dabb8244beaeeb32595f4c3,
         type: 3}
@@ -131,9 +141,9 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 533615853259395151}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &4029684632002896952 stripped
+--- !u!114 &5015648856738448979 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3498056764487185527, guid: 6bfdab959dabb8244beaeeb32595f4c3,
+  m_CorrespondingSourceObject: {fileID: 4826982237242545692, guid: 6bfdab959dabb8244beaeeb32595f4c3,
     type: 3}
   m_PrefabInstance: {fileID: 533615853259395151}
   m_PrefabAsset: {fileID: 0}

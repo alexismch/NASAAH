@@ -9,6 +9,7 @@ namespace Script.Effects
     {
         [SerializeField] private List<WeightedObject> table;
         private int _totalWeight;
+
         private void Awake()
         {
             _totalWeight = 0;
@@ -17,10 +18,11 @@ namespace Script.Effects
                 _totalWeight += item.weight;
             }
         }
+
         public string ChooseEffect()
         {
             string result = null;
-            var roll = Random.Range(0, _totalWeight+1);
+            var roll = Random.Range(0, _totalWeight + 1);
             var cursor = 0;
             for (int i = 0; i < table.Count; i++)
             {
@@ -29,6 +31,7 @@ namespace Script.Effects
                 result = table[i].effect;
                 break;
             }
+
             return result;
         }
     }

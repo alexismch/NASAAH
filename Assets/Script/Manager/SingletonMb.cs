@@ -17,6 +17,7 @@ namespace Script.Manager
                 if (_instance == null)
                     _instance = new GameObject(t.ToString(), t).GetComponent<T>();
             }
+
             return _instance;
         }
 
@@ -26,18 +27,21 @@ namespace Script.Manager
             {
                 _instance = (T) this;
             }
+
             return ReferenceEquals(this, _instance);
         }
-        
+
         protected void Awake()
         {
             if (InitInstance() == false)
             {
-                Debug.LogWarningFormat(this, "An instance of <b><color=red>{0}</color></b> already exists on the scene.\r\n" +
-                                             "The new instance was automatically destroyed", typeof(T));
+                Debug.LogWarningFormat(this,
+                    "An instance of <b><color=red>{0}</color></b> already exists on the scene.\r\n" +
+                    "The new instance was automatically destroyed", typeof(T));
                 Destroy(gameObject);
                 return;
             }
+
             if (persistent)
                 DontDestroyOnLoad(gameObject);
             Initialize();
@@ -56,6 +60,5 @@ namespace Script.Manager
         protected abstract void Cleanup();
 
         protected abstract void Initialize();
-        
     }
 }
