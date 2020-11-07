@@ -7,17 +7,21 @@ namespace Script.Controllers
 {
     public class TurretController : MonoBehaviour
     {
-        [SerializeField] private MoveToTarget moveToTarget;
-        [SerializeField] private GameManager gameManager;
+        private MoveToTarget _moveToTarget;
         private bool _isMoving;
+
+        private void Awake()
+        {
+            _moveToTarget = GetComponent<MoveToTarget>();
+        }
 
         private void OnTriggerEnter2D(Collider2D other)
         {
             if (other.CompareTag("Player"))
             {
                 _isMoving = true;
-                var player = gameManager.Player;
-                moveToTarget.SetTarget(player);
+                var player = GameManager.Player;
+                _moveToTarget.SetTarget(player);
             }
         }
 
