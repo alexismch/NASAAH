@@ -6,15 +6,17 @@ namespace Script.Manager
 {
     public class ScoreManager : MonoBehaviour
     {
-        [SerializeField] private string nextLevel;
         [SerializeField] private int currentScore;
         public Action<int> ONScoreChange;
+        private string[] levels = {"Discover", "Discover Enemy"};
+        private int lvl = 0;
 
         public int Score => currentScore;
 
         private void Awake()
         {
             currentScore = 0;
+            
         }
 
         private void OnDisable()
@@ -35,7 +37,8 @@ namespace Script.Manager
         private IEnumerator WaitToChangeLevel()
         {
             yield return new WaitForSeconds(3);
-            GameManager.Instance.NextLevel(nextLevel);
+            GameManager.Instance.NextLevel(levels[lvl]);
+            lvl++;
         }
 
 
