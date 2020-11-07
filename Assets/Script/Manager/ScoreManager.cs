@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using UnityEngine;
 
 namespace Script.Manager
@@ -21,10 +22,18 @@ namespace Script.Manager
 
         private void Update()
         {
-            if (_currentScore == 10)
+            if (_currentScore == 1)
             {
-                GameManager.Instance.NextLevel2();
+                GameManager.Instance.EndOfLevel();
+                _currentScore = 0;
+                StartCoroutine(ChangeLevel());
             }
+        }
+
+        private IEnumerator ChangeLevel()
+        {
+            yield return new WaitForSeconds(3);
+            GameManager.Instance.NextLevel2();
         }
 
 
