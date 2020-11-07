@@ -35,7 +35,7 @@ PrefabInstance:
     - target: {fileID: 2917115482071744664, guid: 176f13a897b885f43bce9b8d4bec18b8,
         type: 3}
       propertyPath: m_Name
-      value: kkhuaite Kamikaze Variant
+      value: kkhuaite Kamikaze Variant (5)
       objectReference: {fileID: 0}
     - target: {fileID: 4319831695310819052, guid: 176f13a897b885f43bce9b8d4bec18b8,
         type: 3}
@@ -50,12 +50,12 @@ PrefabInstance:
     - target: {fileID: 7897053677944643566, guid: 176f13a897b885f43bce9b8d4bec18b8,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 25.571827
       objectReference: {fileID: 0}
     - target: {fileID: 7897053677944643566, guid: 176f13a897b885f43bce9b8d4bec18b8,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.09
+      value: -6.540345
       objectReference: {fileID: 0}
     - target: {fileID: 7897053677944643566, guid: 176f13a897b885f43bce9b8d4bec18b8,
         type: 3}

@@ -13,6 +13,7 @@ namespace Script.Manager
         [SerializeField] private ScoreManager scoreManager;
         public ScoreManager ScoreManager => scoreManager;
         private static GameObject _player;
+
         public static GameObject Player => _player;
 
         protected override void Initialize()
