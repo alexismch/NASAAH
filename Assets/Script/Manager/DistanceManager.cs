@@ -15,9 +15,9 @@ namespace Script.Manager
             currentDistance = 0;
         }
 
-        private void OnDisable()
+        public void ResetDistance()
         {
-            //currentDistance = 0;
+            currentDistance = 0;
         }
 
         public void SetDistance(float distance)

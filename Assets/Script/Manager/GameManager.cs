@@ -126,6 +126,7 @@ namespace Script.Manager
         {
             yield return new WaitForSeconds(30 / 60f);
             Destroy(_player);
+            _instance.distanceManager.ResetDistance();
             _instance.NextLevel("Game Over");
         }
 
