@@ -128,6 +128,7 @@ GameObject:
   - component: {fileID: 485019214}
   - component: {fileID: 485019213}
   - component: {fileID: 312057250}
+  - component: {fileID: 3601272041759371063}
   m_Layer: 9
   m_Name: Hero
   m_TagString: Player
@@ -189,6 +190,7 @@ MonoBehaviour:
   _isInvincible: 0
   arrowController: {fileID: 312057250}
   _isArmed: 0
+  force: 0
 --- !u!114 &1899999407
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -276,6 +278,18 @@ MonoBehaviour:
   projectilePrefab: {fileID: 4171622741114516805, guid: 45ecf243ea336ba46aac7f76438d2229,
     type: 3}
   projectileSpawner: {fileID: 47911176}
+--- !u!114 &3601272041759371063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5452077261371529166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5f167b58970d14198a1aad6c2a9412, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8409258105670385027
 GameObject:
   m_ObjectHideFlags: 0

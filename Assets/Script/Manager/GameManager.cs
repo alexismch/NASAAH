@@ -15,6 +15,8 @@ namespace Script.Manager
         private static GameManager _instance;
         [SerializeField] private ScoreManager scoreManager;
         public ScoreManager ScoreManager => scoreManager;
+        [SerializeField] private DistanceManager distanceManager;
+        public DistanceManager DistanceManager => distanceManager;
         private static GameObject _player;
         private static bool _playerIsArmed = false;
         private static bool _playerAlive = true;
