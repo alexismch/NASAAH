@@ -30,7 +30,7 @@ namespace Script.Manager
 
         public void ResetLevels()
         {
-            lvl = 0;
+            lvl = 1;
         }
 
         private void Awake()
