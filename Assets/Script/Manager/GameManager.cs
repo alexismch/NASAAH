@@ -18,6 +18,7 @@ namespace Script.Manager
         private static GameObject _player;
         private static bool _playerIsArmed = false;
         private static bool _playerAlive = true;
+        private static bool _isWalking = false;
 
         public static bool PlayerIsArmed => _playerIsArmed;
         public static bool PlayerAlive => _playerAlive;
@@ -53,7 +54,7 @@ namespace Script.Manager
             ObjectPool.ResetPools();
             _playerAlive = true;
         }
-        
+
         public void LoadScene(string sceneName)
         {
             SceneManager.LoadScene(sceneName);
@@ -135,7 +136,7 @@ namespace Script.Manager
             {
                 Debug.Log(o.name);
                 MoveToTarget moveToTarget = o.GetComponent<MoveToTarget>();
-                if(moveToTarget == null)
+                if (moveToTarget == null)
                     continue;
                 if (moveToTarget.Target != null && moveToTarget.Target.CompareTag("Player"))
                     moveToTarget.Target = o;
@@ -162,9 +163,9 @@ namespace Script.Manager
         {
             Debug.Log("Invincibility");
             _player.GetComponent<PlayerController>().IsInvincible = true;
-            
+
             _player.GetComponentInChildren<ParticleSystem>().Play();
-            
+
             _instance.StartCoroutine(CancelInvincibility());
         }
 
@@ -215,7 +216,7 @@ namespace Script.Manager
         {
             _instance.GetComponent<LevelReachedSound>().StartClip();
         }
-        
+
         public static void PlayDead()
         {
             _instance.GetComponent<DeadSound>().StartClip();
@@ -224,6 +225,22 @@ namespace Script.Manager
         public static void PlaySpawn()
         {
             _instance.GetComponent<SpawnSound>().StartClip();
+        }
+
+        public static void StartWalk()
+        {
+            if (_isWalking)
+                return;
+            _instance.GetComponent<AudioSource>().Play();
+            _isWalking = true;
+        }
+
+        public static void StopWalk()
+        {
+            if (!_isWalking)
+                return;
+            _instance.GetComponent<AudioSource>().Pause();
+            _isWalking = false;
         }
     }
 }

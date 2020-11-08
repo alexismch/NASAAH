@@ -13,7 +13,7 @@ namespace Script.Controllers
         private Vector3 _worldPosition;
         [SerializeField] private bool _isArmed;
         [SerializeField] private int force;
-        
+
         public int Force
         {
             get => force;

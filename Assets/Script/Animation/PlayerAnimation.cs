@@ -1,4 +1,5 @@
 ﻿using System;
+using Script.Manager;
 using UnityEngine;
 
 namespace Script.Animation
@@ -18,6 +19,10 @@ namespace Script.Animation
 
         public static void Walk(float movement)
         {
+            if (movement > 0)
+                GameManager.StartWalk();
+            else
+                GameManager.StopWalk();
             _animator.SetFloat(Speed, movement);
         }
 
