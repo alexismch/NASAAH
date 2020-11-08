@@ -12,7 +12,13 @@ namespace Script.Controllers
         [SerializeField] private ArrowController arrowController;
         private Vector3 _worldPosition;
         [SerializeField] private bool _isArmed;
-        private int force;
+        [SerializeField] private int force;
+        
+        public int Force
+        {
+            get => force;
+            set => force = value;
+        }
 
 
         private void Awake()
