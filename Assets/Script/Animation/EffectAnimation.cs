@@ -9,7 +9,7 @@ namespace Script.Animation
     {
         [SerializeField] private List<SpriteEffect> sprites = null;
         [SerializeField] private new SpriteRenderer renderer;
-        [SerializeField] private AnimationCurve curve =null;
+        [SerializeField] private AnimationCurve curve = null;
         private Transform _transform;
 
         private void Awake()
@@ -44,11 +44,12 @@ namespace Script.Animation
                 size.y = curve.Evaluate(elapsed / duration);
                 _transform.localScale = size;
             }
+
             renderer.sprite = null;
         }
     }
 
-    
+
     [System.Serializable]
     public struct SpriteEffect
     {

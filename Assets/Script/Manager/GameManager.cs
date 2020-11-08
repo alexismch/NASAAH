@@ -110,7 +110,7 @@ namespace Script.Manager
         {
             if (_player.GetComponent<PlayerController>().IsInvincible)
                 return;
-            
+
             _playerAlive = false;
             PlayerAnimation.Death();
             AudioManager.PlayDead();

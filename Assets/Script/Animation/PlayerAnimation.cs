@@ -17,7 +17,7 @@ namespace Script.Animation
             _animator = GetComponent<Animator>();
         }
 
-        public static void Walk(float x,float y, float speed)
+        public static void Walk(float x, float y, float speed)
         {
             _animator.SetFloat(Horizontal, x);
             _animator.SetFloat(Vertical, y);

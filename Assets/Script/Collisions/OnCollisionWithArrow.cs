@@ -22,7 +22,7 @@ namespace Script.Collisions
             get => _ogPos;
             set => _ogPos = value;
         }
-        
+
         private void OnTriggerEnter2D(Collider2D other)
         {
             gameObject.TryRelease();

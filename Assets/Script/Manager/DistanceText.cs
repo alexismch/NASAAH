@@ -20,7 +20,7 @@ namespace Script.Manager
 
         private void UpdateDistance(float value)
         {
-            text.text = ((int)value).ToString();
+            text.text = ((int) value).ToString();
         }
     }
 }
