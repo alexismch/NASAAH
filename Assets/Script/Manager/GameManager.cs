@@ -20,6 +20,11 @@ namespace Script.Manager
 
         public static bool PlayerIsArmed => _playerIsArmed;
 
+        public static void SetPlayer(GameObject player)
+        {
+            _player = player;
+        }
+
         public static GameObject Player => _player;
 
         protected override void Initialize()
@@ -94,7 +99,7 @@ namespace Script.Manager
 
         private static IEnumerator KillPlayer()
         {
-            yield return new WaitForSeconds(30/60f);
+            yield return new WaitForSeconds(30 / 60f);
             Destroy(_player);
         }
 
@@ -126,7 +131,7 @@ namespace Script.Manager
             _player.GetComponentInChildren<SpriteRenderer>().color = color;
             Debug.Log("Visible");
         }
-        
+
         private static void Invincibility()
         {
             Debug.Log("Invincibility");
@@ -165,6 +170,7 @@ namespace Script.Manager
         public static void TakeWeapon()
         {
             _playerIsArmed = true;
+            Debug.Log(_player);
             _player.GetComponent<PlayerController>().TakeWeapon();
         }
     }

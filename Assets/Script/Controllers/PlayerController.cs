@@ -17,9 +17,11 @@ namespace Script.Controllers
 
         private void Awake()
         {
-            gameObject.tag = "Player";
+            var o = this.gameObject;
+            o.tag = "Player";
             force = 1;
             _isArmed = GameManager.PlayerIsArmed;
+            GameManager.SetPlayer(o);
         }
 
         // Update is called once per frame

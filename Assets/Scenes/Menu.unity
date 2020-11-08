@@ -164,7 +164,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd6b962e7e694ef4881f795ccbd26d9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextLevel: 
   currentScore: 0
 --- !u!1 &435229465
 GameObject:
@@ -1207,8 +1206,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e776d1c719d7a20409f7306683339151, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  persistent: 0
-  scoreManager: {fileID: 0}
+  persistent: 1
+  scoreManager: {fileID: 292931756}
 --- !u!4 &1987278219
 Transform:
   m_ObjectHideFlags: 0
