@@ -150,6 +150,9 @@ namespace Script.Manager
         {
             Debug.Log("Invincibility");
             _player.GetComponent<PlayerController>().IsInvincible = true;
+            _player.GetComponent <ParticleSystem>().Play ();
+            ParticleSystem.EmissionModule em = _player.GetComponent<ParticleSystem>().emission;
+            em.enabled = true;
             _instance.StartCoroutine(CancelInvincibility());
         }
 
