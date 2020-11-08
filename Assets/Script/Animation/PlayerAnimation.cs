@@ -31,7 +31,7 @@ namespace Script.Animation
 
         public static void Death()
         {
-            _animator.SetTrigger(Death1);
+            _animator.SetBool(Death1, true);
         }
 
         public static void Take()
