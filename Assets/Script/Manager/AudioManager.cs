@@ -8,7 +8,7 @@ namespace Script.Manager
     public class AudioManager : MonoBehaviour
     {
         private static AudioManager _instance;
-        private static Dictionary<String, Sound> _sounds = new Dictionary<string, Sound>();
+        private static Dictionary<string, Sound> _sounds = new Dictionary<string, Sound>();
 
         private void Start()
         {
@@ -40,11 +40,14 @@ namespace Script.Manager
             StartClip(typeof(KamikazeSound));
         }
 
+        // Permet de récupérer le component Sound associé au type demandé dans un dictionnaire
+        // Récupère et sauvegarde le component s'il n'avait pas encore été demandé
+        // Et de lancer son clip
         private static void StartClip(Type soundType)
         {
             Sound sound;
             _sounds.TryGetValue(soundType.Name, out sound);
-            if (!sound)
+            if (!(sound is null)) 
             {
                 sound = (Sound) _instance.GetComponent(soundType);
                 _sounds.Add(soundType.Name, sound);
