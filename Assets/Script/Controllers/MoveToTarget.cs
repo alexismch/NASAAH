@@ -18,15 +18,13 @@ namespace Script.Controllers
             gameObject.tag = "Enemy";
         }
 
-        // Update is called once per frame
         void Update()
         {
+            //récupération de la position du player et deplacement vers cette position
             if (target)
             {
                 var direction = ((Vector2) (target.transform.position - gameObject.transform.position)).normalized;
-                //récupération de la position horizontale du player
                 var hInput = direction.x;
-                //récupération de la position verticale du player
                 var vInput = direction.y;
                 movement.Move(hInput, vInput);
             }

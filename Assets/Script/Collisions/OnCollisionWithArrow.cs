@@ -7,6 +7,7 @@ namespace Script.Collisions
     public class OnCollisionWithArrow : MonoBehaviour
 
     {
+        //Force de la flèche ainsi que sa position de départ
         private int _force = 0;
         private Vector3 _ogPos;
 
@@ -21,19 +22,12 @@ namespace Script.Collisions
             get => _ogPos;
             set => _ogPos = value;
         }
-
-        // Start is called before the first frame update
+        
         private void OnTriggerEnter2D(Collider2D other)
         {
             gameObject.TryRelease();
             if (!other.gameObject.CompareTag("Enemy")) return;
-            Debug.Log("je passe");
             other.GetComponent<Knockback>().Push(_force, _ogPos);
-        }
-
-        // Update is called once per frame
-        void Update()
-        {
         }
     }
 }

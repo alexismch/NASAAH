@@ -26276,6 +26276,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   persistent: 0
   scoreManager: {fileID: 1619532108}
+  distanceManager: {fileID: 0}
 --- !u!4 &1884141224
 Transform:
   m_ObjectHideFlags: 0

@@ -13,7 +13,6 @@ namespace Script.Object
         private Vector2 _maxSpawnPos;
 
 
-        // Use this for initialization
         private void Start()
         {
             Vector3 pos;
@@ -23,7 +22,7 @@ namespace Script.Object
             _maxSpawnPos = new Vector2(size.x / 2, size.y / 2);
             for (var i = 0; i < numberToSpawn; i++)
             {
-                //create pos for new diamond
+                //Genere une nouvelle position pour le spawn du diamant
                 pos = new Vector3(Random.Range(-_maxSpawnPos.x, _maxSpawnPos.x),
                     Random.Range(-_maxSpawnPos.y, _maxSpawnPos.y), 0);
                 GameObject diamond = Instantiate(spawnedPrefab, Vector3.zero, Quaternion.identity) as GameObject;
@@ -31,16 +30,16 @@ namespace Script.Object
                 diamond.transform.localPosition = pos;
 
                 var j = 0;
-                while (j < 15 && (IsBlocked(diamond)))
+                while (j < 100 && ((IsBlocked(diamond)) || IsRadiusClear(diamond)))
                 {
                     j++;
-                    Debug.Log("'doit bouger" + i);
                     diamond.transform.localPosition = new Vector3(Random.Range(-_maxSpawnPos.x, _maxSpawnPos.x),
                         Random.Range(-_maxSpawnPos.y, _maxSpawnPos.y), 0);
                 }
             }
         }
 
+        //Verifie si l'endroit du spawn est assez éloigné d'autres diamants
         private bool IsRadiusClear(GameObject diamond)
         {
             var collider2Ds = Physics2D.OverlapCircleAll(diamond.transform.position, radiusSpawnDiamond);
@@ -55,7 +54,8 @@ namespace Script.Object
 
             return true;
         }
-
+        
+        //Verifie si l'endroit du spawn est libre
         private bool IsBlocked(GameObject prefab)
         {
             CircleCollider2D colliderPrefab = prefab.GetComponent<CircleCollider2D>();
