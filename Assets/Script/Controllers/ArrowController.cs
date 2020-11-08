@@ -23,6 +23,7 @@ namespace Script.Controllers
             projectile.GetComponent<OnCollisionWithArrow>().OgPos = t.position;
             var rb = projectile.GetComponent<Rigidbody2D>();
             rb.AddForce(projectile.transform.up * 500);
+            AudioManager.PlayArrowFired();
         }
     }
 }
