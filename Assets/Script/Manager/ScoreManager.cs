@@ -49,6 +49,7 @@ namespace Script.Manager
             if (currentScore == 10)
             {
                 currentScore = 0;
+                GameManager.PlayLevelReached();
                 GameManager.Instance.EndOfLevel();
                 StartCoroutine(WaitToChangeLevel());
             }

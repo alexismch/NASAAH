@@ -3,6 +3,7 @@ using System.Collections;
 using Cinemachine;
 using Script.Animation;
 using Script.Controllers;
+using Script.Effects;
 using Script.Manager;
 using Script.Pooling;
 using UnityEngine;
@@ -56,7 +57,6 @@ namespace Script.Manager
             SceneManager.LoadScene(sceneName);
             var asyncload = SceneManager.LoadSceneAsync(sceneName);
         }
-
 
         public void ExitGame()
         {
@@ -200,6 +200,11 @@ namespace Script.Manager
         public void ResetLevels()
         {
             scoreManager.ResetLevels();
+        }
+
+        public static void PlayLevelReached()
+        {
+            _instance.GetComponent<LevelReachedSound>().StartClip();
         }
     }
 }
