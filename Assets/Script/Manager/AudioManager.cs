@@ -47,7 +47,7 @@ namespace Script.Manager
         {
             Sound sound;
             _sounds.TryGetValue(soundType.Name, out sound);
-            if (!(sound is null)) 
+            if (!sound) 
             {
                 sound = (Sound) _instance.GetComponent(soundType);
                 _sounds.Add(soundType.Name, sound);
