@@ -1,4 +1,5 @@
-﻿using Script.Controllers;
+﻿using System;
+using Script.Controllers;
 using UnityEngine;
 
 namespace Script.Collisions
@@ -31,11 +32,19 @@ namespace Script.Collisions
         {
             if (((layerMask & 1 << other.gameObject.layer) == 1 << other.gameObject.layer))
             {
-                _dynamicMovement.Speed *= 2;
-                var color = gameObject.GetComponentInParent<Rigidbody2D>().GetComponentInChildren<SpriteRenderer>()
-                    .color;
-                color.a = 1f;
-                gameObject.GetComponentInParent<Rigidbody2D>().GetComponentInChildren<SpriteRenderer>().color = color;
+                try
+                {
+                    _dynamicMovement.Speed *= 2;
+                    var color = gameObject.GetComponentInParent<Rigidbody2D>().GetComponentInChildren<SpriteRenderer>()
+                        .color;
+                    color.a = 1f;
+                    gameObject.GetComponentInParent<Rigidbody2D>().GetComponentInChildren<SpriteRenderer>().color =
+                        color;
+                }
+                catch
+                {
+                    // ignored
+                }
             }
         }
     }
