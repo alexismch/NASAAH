@@ -115,7 +115,7 @@ namespace Script.Manager
 
             _playerAlive = false;
             PlayerAnimation.Death();
-            PlayDead();
+            AudioManager.PlayDead();
             _instance.StartCoroutine(KillPlayer());
             Debug.Log("Killed");
         }
@@ -210,21 +210,6 @@ namespace Script.Manager
         public void ResetLevels()
         {
             scoreManager.ResetLevels();
-        }
-
-        public static void PlayLevelReached()
-        {
-            _instance.GetComponent<LevelReachedSound>().StartClip();
-        }
-
-        public static void PlayDead()
-        {
-            _instance.GetComponent<DeadSound>().StartClip();
-        }
-
-        public static void PlaySpawn()
-        {
-            _instance.GetComponent<SpawnSound>().StartClip();
         }
     }
 }
