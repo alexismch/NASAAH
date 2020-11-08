@@ -218,5 +218,10 @@ namespace Script.Manager
         {
             _instance.GetComponent<DeadSound>().StartClip();
         }
+
+        public static void PlaySpawn()
+        {
+            _instance.GetComponent<SpawnSound>().StartClip();
+        }
     }
 }
