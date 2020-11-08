@@ -63,26 +63,39 @@ namespace Script.Manager
             {
                 case "SpeedBoost":
                     ChangeSpeed(1);
+                    AnnounceEffect(effect);
                     break;
                 case "SpeedDebuf":
                     ChangeSpeed(-1);
+                    AnnounceEffect(effect);
                     break;
                 case "ForceBoost":
                     ChangeForce(1);
+                    AnnounceEffect(effect);
                     break;
                 case "ForceDebuf":
                     ChangeForce(-1);
+                    AnnounceEffect(effect);
                     break;
                 case "Invincibility":
                     Invincibility();
+                    AnnounceEffect(effect);
                     break;
                 case "Invisibility":
                     Invisibility();
+                    AnnounceEffect(effect);
                     break;
                 case "InstantDie":
                     Kill();
+                    AnnounceEffect(effect);
                     break;
             }
+        }
+
+        public static void AnnounceEffect(string effect)
+        {
+            var announcer = GameObject.FindWithTag("Announcer");
+            announcer.GetComponent<EffectAnimation>()?.AnnounceEffect(effect);
         }
 
         public static void Kill()
