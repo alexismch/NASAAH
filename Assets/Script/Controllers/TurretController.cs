@@ -28,6 +28,7 @@ namespace Script.Controllers
             {
                 transform.Rotate(0, 0, 50 * Time.deltaTime);
             }
+            //Arrete de tourner et poursuit le joueur
             else
             {
                 transform.rotation = Quaternion.Euler(0, 0, 0);

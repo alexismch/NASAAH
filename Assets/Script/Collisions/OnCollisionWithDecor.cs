@@ -13,6 +13,7 @@ namespace Script.Collisions
             _dynamicMovement = GetComponentInParent<DynamicMovement>();
         }
 
+        //Ralenti et applique un effet transparent sur le mob
         private void OnTriggerEnter2D(Collider2D other)
         {
             if ((layerMask & 1 << other.gameObject.layer) == 1 << other.gameObject.layer)
@@ -25,6 +26,7 @@ namespace Script.Collisions
             }
         }
 
+        //Reinitialise la vitesse et apparence de départ
         private void OnTriggerExit2D(Collider2D other)
         {
             if (((layerMask & 1 << other.gameObject.layer) == 1 << other.gameObject.layer))

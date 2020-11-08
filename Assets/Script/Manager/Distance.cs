@@ -15,6 +15,7 @@ namespace Script.Manager
 
         void Update()
         {
+            //calcule la distance parcourue a chaque frame
             var position = transform.position;
             GameManager.Instance.DistanceManager.AddDistance(Vector3.Distance(position, _lastPosition));
             _lastPosition = position;

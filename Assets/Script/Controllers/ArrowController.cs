@@ -10,7 +10,8 @@ namespace Script.Controllers
         [SerializeField] private GameObject projectilePrefab;
         [SerializeField] private Transform projectileSpawner;
 
-
+        
+        //Tire une flèche de la pool avec une force et un angle
         public void Fire(Quaternion q, int force)
         {
             if (projectilePrefab.TryAcquire(out var projectile) == false)
