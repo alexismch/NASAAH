@@ -51,6 +51,9 @@ TagManager:
   - name: Decors
     uniqueID: 1016181103
     locked: 0
+  - name: Particule
+    uniqueID: 3906459281
+    locked: 0
   - name: Items
     uniqueID: 3952862575
     locked: 0

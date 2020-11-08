@@ -2,6 +2,8 @@
 using Cinemachine;
 using Script.Animation;
 using Script.Controllers;
+using Script.Effects;
+using Script.Manager;
 using Script.Pooling;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -56,7 +58,6 @@ namespace Script.Manager
         {
             SceneManager.LoadScene(sceneName);
         }
-
 
         public void ExitGame()
         {
@@ -160,12 +161,16 @@ namespace Script.Manager
         {
             Debug.Log("Invincibility");
             _player.GetComponent<PlayerController>().IsInvincible = true;
+            
+            _player.GetComponentInChildren<ParticleSystem>().Play();
+            
             _instance.StartCoroutine(CancelInvincibility());
         }
 
         private static IEnumerator CancelInvincibility()
         {
             yield return new WaitForSeconds(5);
+            _player.GetComponentInChildren<ParticleSystem>().Stop();
             _player.GetComponent<PlayerController>().IsInvincible = false;
             Debug.Log("Killable");
         }
@@ -201,6 +206,11 @@ namespace Script.Manager
         public void ResetLevels()
         {
             scoreManager.ResetLevels();
+        }
+
+        public static void PlayLevelReached()
+        {
+            _instance.GetComponent<LevelReachedSound>().StartClip();
         }
     }
 }

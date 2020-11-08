@@ -6,7 +6,7 @@ namespace Script.Effects
     
     public class Sound : MonoBehaviour
     {
-        [SerializeField] private AudioSource audioSource;
+        [SerializeField] protected AudioSource audioSource;
         [SerializeField] protected AudioClip audioClip;
 
         public void StartClip()
