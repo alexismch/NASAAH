@@ -6,7 +6,7 @@ namespace Script.Effects
     [CreateAssetMenu(menuName = "Effect Table")]
     public class EffectsTable : ScriptableObject
     {
-        [SerializeField] private List<WeightedObject> table;
+        [SerializeField] private List<WeightedObject> table = null;
         private int _totalWeight;
 
         private void Awake()

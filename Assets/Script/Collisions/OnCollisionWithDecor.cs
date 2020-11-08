@@ -6,7 +6,7 @@ namespace Script.Collisions
 {
     public class OnCollisionWithDecor : MonoBehaviour
     {
-        [SerializeField] private LayerMask layerMask;
+        [SerializeField] private LayerMask layerMask = new LayerMask();
         private DynamicMovement _dynamicMovement;
 
         private void Awake()

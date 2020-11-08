@@ -4,7 +4,7 @@ namespace Script.Manager
 {
     public class Score : MonoBehaviour
     {
-        [SerializeField] private int points;
+        [SerializeField] private int points = 0;
 
         public void ScorePoints()
         {

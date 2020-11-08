@@ -6,9 +6,9 @@ namespace Script.Controllers
 {
     public class PlayerController : MonoBehaviour
     {
-        [SerializeField] Movement movement;
+        [SerializeField] Movement movement = null;
         [SerializeField] private bool _isInvincible = false;
-        [SerializeField] private ArrowController arrowController;
+        [SerializeField] private ArrowController arrowController = null;
         [SerializeField] private bool _isArmed;
         [SerializeField] private int force;
 

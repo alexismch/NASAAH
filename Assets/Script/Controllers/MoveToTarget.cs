@@ -4,7 +4,7 @@ namespace Script.Controllers
 {
     public class MoveToTarget : MonoBehaviour
     {
-        [SerializeField] Movement movement;
+        [SerializeField] Movement movement = null;
         [SerializeField] private GameObject target;
 
         public GameObject Target

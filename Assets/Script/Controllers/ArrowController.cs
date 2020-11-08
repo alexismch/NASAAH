@@ -7,8 +7,8 @@ namespace Script.Controllers
 {
     public class ArrowController : MonoBehaviour
     {
-        [SerializeField] private GameObject projectilePrefab;
-        [SerializeField] private Transform projectileSpawner;
+        [SerializeField] private GameObject projectilePrefab = null;
+        [SerializeField] private Transform projectileSpawner = null;
 
         
         //Tire une flèche de la pool avec une force et un angle

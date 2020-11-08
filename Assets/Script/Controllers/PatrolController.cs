@@ -6,7 +6,7 @@ namespace Script.Controllers
 {
     public class PatrolController : MonoBehaviour
     {
-        [SerializeField] private GameObject[] targetList;
+        [SerializeField] private GameObject[] targetList = {};
 
         private MoveToTarget _moveToTarget;
         private GameObject _currentTarget;

@@ -5,8 +5,8 @@ namespace Script.Object
 {
     public class DiscoverWeaponTaken : WeaponTaken
     {
-        [SerializeField] private GameObject diamond;
-        [SerializeField] private TMP_Text text;
+        [SerializeField] private GameObject diamond = null;
+        [SerializeField] private TMP_Text text = null;
 
         private new void OnTriggerEnter2D(Collider2D other)
         {
