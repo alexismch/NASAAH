@@ -35,7 +35,7 @@ namespace Script.Controllers
             var hInput = Input.GetAxisRaw("Horizontal");
             var vInput = Input.GetAxisRaw("Vertical");
             movement.Move(hInput, vInput);
-            PlayerAnimation.Walk(Mathf.Abs(hInput) , Mathf.Abs(vInput),Mathf.Abs(hInput) + Mathf.Abs(vInput));
+            PlayerAnimation.Walk(hInput , vInput,Mathf.Abs(hInput) + Mathf.Abs(vInput));
             
             //Tire vers la positin de la souris si arme equipée
             if (Input.GetButtonDown("Fire1") && _isArmed)
