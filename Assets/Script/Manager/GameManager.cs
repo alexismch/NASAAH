@@ -115,6 +115,7 @@ namespace Script.Manager
 
             _playerAlive = false;
             PlayerAnimation.Death();
+            PlayDead();
             _instance.StartCoroutine(KillPlayer());
             Debug.Log("Killed");
         }
@@ -211,6 +212,11 @@ namespace Script.Manager
         public static void PlayLevelReached()
         {
             _instance.GetComponent<LevelReachedSound>().StartClip();
+        }
+        
+        public static void PlayDead()
+        {
+            _instance.GetComponent<DeadSound>().StartClip();
         }
     }
 }
