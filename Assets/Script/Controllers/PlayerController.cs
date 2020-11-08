@@ -28,7 +28,7 @@ namespace Script.Controllers
             force = 1;
             _isArmed = GameManager.PlayerIsArmed;
             GameManager.SetPlayer(o);
-            GameManager.PlaySpawn();
+            AudioManager.PlaySpawn();
         }
 
         // Update is called once per frame

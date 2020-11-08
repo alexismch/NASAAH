@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using Script.Controllers;
 using UnityEngine;
 
 namespace Script.Manager
@@ -49,7 +50,7 @@ namespace Script.Manager
             if (currentScore == 10)
             {
                 currentScore = 0;
-                GameManager.PlayLevelReached();
+                AudioManager.PlayLevelReached();
                 GameManager.Instance.EndOfLevel();
                 if(GameManager.PlayerAlive)
                     StartCoroutine(WaitToChangeLevel());
