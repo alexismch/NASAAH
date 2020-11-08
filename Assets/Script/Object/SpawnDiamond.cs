@@ -46,15 +46,12 @@ namespace Script.Object
             foreach (var coll in collider2Ds)
             {
                 if (coll.gameObject.CompareTag($"Diamond"))
-                {
-                    Debug.Log("il y a un diamond pas loin");
                     return false;
-                }
             }
 
             return true;
         }
-        
+
         //Verifie si l'endroit du spawn est libre
         private bool IsBlocked(GameObject prefab)
         {
