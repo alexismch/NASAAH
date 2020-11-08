@@ -17,53 +17,40 @@ namespace Script.Controllers
 
         public static void PlayLevelReached()
         {
-            Sound levelReachedSound;
-            _sounds.TryGetValue("LevelReachedSound", out levelReachedSound);
-            if (!levelReachedSound)
-            {
-                levelReachedSound = _instance.GetComponent<LevelReachedSound>();
-                _sounds.Add("LevelReachedSound", levelReachedSound);
-            }
-
-            levelReachedSound.StartClip();
+            StartClip(typeof(LevelReachedSound));
         }
 
         public static void PlayDead()
         {
-            Sound deadSound;
-            _sounds.TryGetValue("DeadSound", out deadSound);
-            if (!deadSound)
-            {
-                deadSound = _instance.GetComponent<DeadSound>();
-                _sounds.Add("DeadSound", deadSound);
-            }
-
-            deadSound.StartClip();
+            StartClip(typeof(DeadSound));
         }
 
         public static void PlaySpawn()
         {
-            Sound spawnSound;
-            _sounds.TryGetValue("SpawnSound", out spawnSound);
-            if (!spawnSound)
-            {
-                spawnSound = _instance.GetComponent<SpawnSound>();
-                _sounds.Add("SpawnSound", spawnSound);
-            }
-
-            spawnSound.StartClip();
+            StartClip(typeof(SpawnSound));
         }
 
         public static void PlayArrowFired()
         {
-            Sound arrowFiredSound;
-            _sounds.TryGetValue("ArrowFiredSound", out arrowFiredSound);
-            if (!arrowFiredSound)
+            StartClip(typeof(ArrowFiredSound));
+        }
+
+        public static void Kamikaze()
+        {
+            StartClip(typeof(KamikazeSound));
+        }
+
+        private static void StartClip(Type soundType)
+        {
+            Sound sound;
+            _sounds.TryGetValue(soundType.Name, out sound);
+            if (!sound)
             {
-                arrowFiredSound = _instance.GetComponent<ArrowFiredSound>();
-                _sounds.Add("ArrowFiredSound", arrowFiredSound);
+                sound = (Sound) _instance.GetComponent(soundType);
+                _sounds.Add(soundType.Name, sound);
             }
-            arrowFiredSound.StartClip();
+
+            sound.StartClip();
         }
     }
 }
