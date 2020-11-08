@@ -1,9 +1,8 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using Script.Manager;
 using UnityEngine;
 
-namespace Script.Effects
+namespace Script.Effects.Sounds
 {
     public class MenuRestartSound : Sound
     {

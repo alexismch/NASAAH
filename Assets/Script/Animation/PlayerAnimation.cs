@@ -1,6 +1,4 @@
-﻿using System;
-using Script.Manager;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Script.Animation
 {

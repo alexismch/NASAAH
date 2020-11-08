@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections;
-using Script.Controllers;
 using UnityEngine;
 
 namespace Script.Manager
@@ -31,7 +30,7 @@ namespace Script.Manager
 
         public void ResetLevels()
         {
-            lvl = 1;
+            lvl = 0;
         }
 
         private void Awake()

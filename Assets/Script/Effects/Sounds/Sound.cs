@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Script.Effects
+namespace Script.Effects.Sounds
 {
     public delegate void CallBack();
     

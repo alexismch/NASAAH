@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using Script.Effects;
+using Script.Effects.Sounds;
 using UnityEngine;
 
-namespace Script.Controllers
+namespace Script.Manager
 {
     public class AudioManager : MonoBehaviour
     {

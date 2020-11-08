@@ -1,5 +1,4 @@
-﻿using System;
-using Script.Manager;
+﻿using Script.Manager;
 using UnityEngine;
 
 namespace Script.Collisions

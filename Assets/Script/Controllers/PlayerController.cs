@@ -1,5 +1,4 @@
-﻿using System;
-using Script.Animation;
+﻿using Script.Animation;
 using Script.Manager;
 using UnityEngine;
 
@@ -10,7 +9,6 @@ namespace Script.Controllers
         [SerializeField] Movement movement;
         [SerializeField] private bool _isInvincible = false;
         [SerializeField] private ArrowController arrowController;
-        private Vector3 _worldPosition;
         [SerializeField] private bool _isArmed;
         [SerializeField] private int force;
 

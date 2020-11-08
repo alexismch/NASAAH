@@ -1,7 +1,5 @@
-﻿using Script.Manager;
-using TMPro;
+﻿using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
 namespace Script.Object
 {

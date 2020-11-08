@@ -1,7 +1,4 @@
-﻿using System;
-using Script.Manager;
-using UnityEngine;
-using UnityEngine.Serialization;
+﻿using UnityEngine;
 
 namespace Script.Controllers
 {

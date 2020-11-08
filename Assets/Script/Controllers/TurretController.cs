@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections;
-using Script.Manager;
+﻿using Script.Manager;
 using UnityEngine;
 
 namespace Script.Controllers

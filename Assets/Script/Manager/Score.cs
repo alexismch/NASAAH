@@ -1,5 +1,4 @@
-﻿using Script.Manager;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Script.Manager
 {

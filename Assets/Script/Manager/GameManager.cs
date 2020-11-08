@@ -2,8 +2,6 @@
 using Cinemachine;
 using Script.Animation;
 using Script.Controllers;
-using Script.Effects;
-using Script.Manager;
 using Script.Pooling;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -127,6 +125,7 @@ namespace Script.Manager
             yield return new WaitForSeconds(30 / 60f);
             Destroy(_player);
             _instance.distanceManager.ResetDistance();
+            _playerIsArmed = false;
             _instance.NextLevel("Game Over");
         }
 

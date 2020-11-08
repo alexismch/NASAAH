@@ -1,4 +1,3 @@
-using Script.Pooling;
 using UnityEngine;
 
 namespace Script.Pooling
