@@ -171,8 +171,9 @@ namespace Script.Manager
 
         private static IEnumerator CancelInvincibility()
         {
-            yield return new WaitForSeconds(5);
+            yield return new WaitForSeconds(3);
             _player.GetComponentInChildren<ParticleSystem>().Stop();
+            yield return new WaitForSeconds(2);
             _player.GetComponent<PlayerController>().IsInvincible = false;
             Debug.Log("Killable");
         }
