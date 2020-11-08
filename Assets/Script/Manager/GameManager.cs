@@ -159,12 +159,16 @@ namespace Script.Manager
         {
             Debug.Log("Invincibility");
             _player.GetComponent<PlayerController>().IsInvincible = true;
+            
+            _player.GetComponentInChildren<ParticleSystem>().Play();
+            
             _instance.StartCoroutine(CancelInvincibility());
         }
 
         private static IEnumerator CancelInvincibility()
         {
             yield return new WaitForSeconds(5);
+            _player.GetComponentInChildren<ParticleSystem>().Stop();
             _player.GetComponent<PlayerController>().IsInvincible = false;
             Debug.Log("Killable");
         }
