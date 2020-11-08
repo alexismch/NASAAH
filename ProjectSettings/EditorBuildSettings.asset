@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CityMap.unity
     guid: 36e7bd191ad1ef0419672d7714f97b7e
+  - enabled: 1
+    path: Assets/Scenes/Ggs.unity
+    guid: 10f620147dc170f449aeaeae0b1575b0
   m_configObjects: {}

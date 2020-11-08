@@ -8,7 +8,7 @@ namespace Script.Manager
     {
         [SerializeField] private int currentScore;
         public Action<int> ONScoreChange;
-        private string[] levels = {"Discover", "Discover Enemy","DesertCity","BeachPeanutMap","CityMap"};
+        private string[] levels = {"Discover", "Discover Enemy", "DesertCity", "BeachPeanutMap", "CityMap", "Ggs"};
         private int lvl = 0;
 
         public int Score => currentScore;
@@ -17,7 +17,7 @@ namespace Script.Manager
         {
             return levels[lvl];
         }
-        
+
         public string GetLevel(int num)
         {
             return levels[num];
@@ -36,7 +36,6 @@ namespace Script.Manager
         private void Awake()
         {
             currentScore = 0;
-            
         }
 
         private void OnDisable()
@@ -51,7 +50,7 @@ namespace Script.Manager
                 currentScore = 0;
                 AudioManager.PlayLevelReached();
                 GameManager.Instance.EndOfLevel();
-                if(GameManager.PlayerAlive)
+                if (GameManager.PlayerAlive)
                     StartCoroutine(WaitToChangeLevel());
             }
         }
