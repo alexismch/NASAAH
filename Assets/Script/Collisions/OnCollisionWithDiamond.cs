@@ -6,8 +6,8 @@ namespace Script.Collisions
     public class OnCollisionWithDiamond : MonoBehaviour
 
     {
-        [SerializeField] private UnityEvent onDestroyed;
-        [SerializeField] private LayerMask layerMask;
+        [SerializeField] private UnityEvent onDestroyed = null;
+        [SerializeField] private LayerMask layerMask = new LayerMask();
 
         private void OnTriggerEnter2D(Collider2D other)
         {

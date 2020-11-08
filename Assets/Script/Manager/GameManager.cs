@@ -11,9 +11,9 @@ namespace Script.Manager
     public class GameManager : SingletonMb<GameManager>
     {
         private static GameManager _instance;
-        [SerializeField] private ScoreManager scoreManager;
+        [SerializeField] private ScoreManager scoreManager = null;
         public ScoreManager ScoreManager => scoreManager;
-        [SerializeField] private DistanceManager distanceManager;
+        [SerializeField] private DistanceManager distanceManager = null;
         public DistanceManager DistanceManager => distanceManager;
         private static GameObject _player;
         private static bool _playerIsArmed = false;

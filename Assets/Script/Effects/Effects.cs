@@ -5,7 +5,7 @@ namespace Script.Effects
 {
     public class Effects : MonoBehaviour
     {
-        [SerializeField] private EffectsTable effectsTable;
+        [SerializeField] private EffectsTable effectsTable = null;
 
         public void ChooseEffect()
         {

@@ -4,7 +4,7 @@ namespace Script.Manager
 {
     public abstract class SingletonMb<T> : MonoBehaviour where T : SingletonMb<T>
     {
-        [SerializeField] private bool persistent;
+        [SerializeField] private bool persistent = false;
         private static T _instance;
         public static T Instance => GetInstance();
 

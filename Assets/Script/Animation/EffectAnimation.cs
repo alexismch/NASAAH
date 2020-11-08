@@ -1,19 +1,20 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace Script.Animation
 {
     public class EffectAnimation : MonoBehaviour
     {
-        [SerializeField] private List<SpriteEffect> sprites;
-        [SerializeField] private SpriteRenderer _renderer;
-        [SerializeField] private AnimationCurve curve;
+        [SerializeField] private List<SpriteEffect> sprites = null;
+        [SerializeField] private new SpriteRenderer renderer;
+        [SerializeField] private AnimationCurve curve =null;
         private Transform _transform;
 
         private void Awake()
         {
-            _renderer = GetComponentInChildren<SpriteRenderer>();
+            renderer = GetComponentInChildren<SpriteRenderer>();
             _transform = transform;
         }
 
@@ -23,7 +24,7 @@ namespace Script.Animation
             {
                 if (spriteEffect.effect.Equals(effect))
                 {
-                    _renderer.sprite = spriteEffect.sprite;
+                    renderer.sprite = spriteEffect.sprite;
                     StartCoroutine(ShowEffect());
                     return;
                 }
@@ -43,7 +44,7 @@ namespace Script.Animation
                 size.y = curve.Evaluate(elapsed / duration);
                 _transform.localScale = size;
             }
-            _renderer.sprite = null;
+            renderer.sprite = null;
         }
     }
 
