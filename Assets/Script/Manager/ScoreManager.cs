@@ -8,7 +8,7 @@ namespace Script.Manager
     {
         [SerializeField] private int currentScore;
         public Action<int> ONScoreChange;
-        private string[] levels = {"Discover Enemy"};
+        private string[] levels = {"Discover Enemy","DesertCity","BeachPeanutMap","CityMap"};
         private int lvl = 0;
 
         public int Score => currentScore;
