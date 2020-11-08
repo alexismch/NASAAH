@@ -12,7 +12,6 @@ namespace Script.Effects
         public void StartClip()
         {
             audioSource.PlayOneShot(audioClip, 1f);
-            Debug.Log(audioClip);
         }
     }
 }
