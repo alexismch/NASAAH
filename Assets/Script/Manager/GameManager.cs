@@ -179,6 +179,8 @@ namespace Script.Manager
         private static void ChangeForce(int value)
         {
             Debug.Log("Force " + value);
+            PlayerController playerController = _player.GetComponent<PlayerController>();
+            playerController.Force += value;
         }
 
         private static void ChangeSpeed(float value)
