@@ -37,14 +37,20 @@ namespace Script.Manager
         {
         }
 
-        public void NextLevel(string nextLevel)
+        public void NextLevel()
         {
-            LoadScene(nextLevel);
-            if (!nextLevel.Equals("Discover"))
-                ScoreManager.SetScore(0);
-            ObjectPool.ResetPools();
+            NextLevel(scoreManager.GetLevel());
         }
 
+        public void NextLevel(string lvl)
+        {
+            LoadScene(lvl);
+            if (!lvl.Equals(scoreManager.GetLevel(0)))
+                ScoreManager.SetScore(0);
+            scoreManager.IncLvl();
+            ObjectPool.ResetPools();
+        }
+        
         public void LoadScene(string sceneName)
         {
             SceneManager.LoadScene(sceneName);
@@ -102,6 +108,7 @@ namespace Script.Manager
         {
             yield return new WaitForSeconds(30 / 60f);
             Destroy(_player);
+            _instance.NextLevel("Game Over");
         }
 
         private static void Invisibility()
@@ -173,6 +180,11 @@ namespace Script.Manager
             _playerIsArmed = true;
             Debug.Log(_player);
             _player.GetComponent<PlayerController>().TakeWeapon();
+        }
+
+        public void ResetLevels()
+        {
+            scoreManager.ResetLevels();
         }
     }
 }

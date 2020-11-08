@@ -627,17 +627,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1987278218}
-        m_MethodName: ExitGame
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 0
 --- !u!114 &719174857
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -684,7 +673,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 719174854}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 749e1dd3cc55477cad829b40ce671495, type: 3}
+  m_Script: {fileID: 11500000, guid: ac32d121696e4f4381a3a75cbd059608, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 811972573}
@@ -1081,7 +1070,7 @@ GameObject:
   - component: {fileID: 1910729211}
   - component: {fileID: 1910729210}
   - component: {fileID: 1910729209}
-  - component: {fileID: 1910729213}
+  - component: {fileID: 1910729212}
   m_Layer: 5
   m_Name: StartButton
   m_TagString: Untagged
@@ -1152,7 +1141,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1910729213}
+      - m_Target: {fileID: 1910729212}
         m_MethodName: StartClip
         m_Mode: 1
         m_Arguments:
@@ -1163,17 +1152,6 @@ MonoBehaviour:
           m_StringArgument: Discover
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1987278218}
-        m_MethodName: NextLevel
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Discover
-          m_BoolArgument: 0
-        m_CallState: 0
 --- !u!114 &1910729210
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1211,7 +1189,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1910729207}
   m_CullTransparentMesh: 0
---- !u!114 &1910729213
+--- !u!114 &1910729212
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1220,7 +1198,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1910729207}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 749e1dd3cc55477cad829b40ce671495, type: 3}
+  m_Script: {fileID: 11500000, guid: 401bc4d6fdb944a698f3b2a8d4433379, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 811972573}
@@ -1338,7 +1316,7 @@ GameObject:
   - component: {fileID: 1987278218}
   m_Layer: 0
   m_Name: GameManager
-  m_TagString: Untagged
+  m_TagString: GameManager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

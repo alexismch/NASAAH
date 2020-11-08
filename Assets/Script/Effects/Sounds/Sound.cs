@@ -1,13 +1,13 @@
-﻿using Script.Manager;
-using UnityEngine;
-using UnityEngine.Serialization;
+﻿using UnityEngine;
 
 namespace Script.Effects
 {
+    public delegate void CallBack();
+    
     public class Sound : MonoBehaviour
     {
         [SerializeField] private AudioSource audioSource;
-        [SerializeField] private AudioClip audioClip;
+        [SerializeField] protected AudioClip audioClip;
 
         public void StartClip()
         {

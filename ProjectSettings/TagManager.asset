@@ -10,6 +10,7 @@ TagManager:
   - PlayerInvisible
   - Diamond
   - Checkpoint
+  - GameManager
   layers:
   - Default
   - TransparentFX

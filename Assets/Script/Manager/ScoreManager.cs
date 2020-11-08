@@ -8,10 +8,30 @@ namespace Script.Manager
     {
         [SerializeField] private int currentScore;
         public Action<int> ONScoreChange;
-        private string[] levels = {"Discover Enemy","DesertCity","BeachPeanutMap","CityMap"};
+        private string[] levels = {"Discover", "Discover Enemy","DesertCity","BeachPeanutMap","CityMap"};
         private int lvl = 0;
 
         public int Score => currentScore;
+
+        public string GetLevel()
+        {
+            return levels[lvl];
+        }
+        
+        public string GetLevel(int num)
+        {
+            return levels[num];
+        }
+
+        public void IncLvl()
+        {
+            lvl++;
+        }
+
+        public void ResetLevels()
+        {
+            lvl = 0;
+        }
 
         private void Awake()
         {
@@ -37,8 +57,7 @@ namespace Script.Manager
         private IEnumerator WaitToChangeLevel()
         {
             yield return new WaitForSeconds(3);
-            GameManager.Instance.NextLevel(levels[lvl]);
-            lvl++;
+            GameManager.Instance.NextLevel();
         }
 
 
