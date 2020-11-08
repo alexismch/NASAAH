@@ -17,4 +17,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Discover Enemy.unity
     guid: a47dfabc8d216f44689933a8504c0538
+  - enabled: 1
+    path: Assets/Scenes/DesertCity.unity
+    guid: b299ee4cafa669942ad992b2fd9699ca
+  - enabled: 1
+    path: Assets/Scenes/BeachPeanutMap.unity
+    guid: 849c7186632221242b691336400dd388
+  - enabled: 1
+    path: Assets/Scenes/CityMap.unity
+    guid: 36e7bd191ad1ef0419672d7714f97b7e
   m_configObjects: {}
