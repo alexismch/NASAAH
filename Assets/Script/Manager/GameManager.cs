@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using Cinemachine;
 using Script.Animation;
 using Script.Controllers;
@@ -108,16 +109,12 @@ namespace Script.Manager
         public static void Kill()
         {
             if (_player.GetComponent<PlayerController>().IsInvincible)
-            {
-                Debug.Log("No Killed");
                 return;
-            }
-
+            
             _playerAlive = false;
             PlayerAnimation.Death();
             AudioManager.PlayDead();
             _instance.StartCoroutine(KillPlayer());
-            Debug.Log("Killed");
         }
 
         private static IEnumerator KillPlayer()
@@ -131,11 +128,9 @@ namespace Script.Manager
 
         private static void Invisibility()
         {
-            Debug.Log("Invisible");
             GameObject[] gameObjects = GameObject.FindGameObjectsWithTag("Enemy");
             foreach (var o in gameObjects)
             {
-                Debug.Log(o.name);
                 MoveToTarget moveToTarget = o.GetComponent<MoveToTarget>();
                 if (moveToTarget == null)
                     continue;
@@ -153,16 +148,22 @@ namespace Script.Manager
         private static IEnumerator CancelInvisibility()
         {
             yield return new WaitForSeconds(10);
-            _player.tag = "Player";
+            try
+            {
+                _player.tag = "Player";
+            }
+            catch
+            {
+                // ignore
+            }
+
             var color = _player.GetComponentInChildren<SpriteRenderer>().color;
             color.a = 1f;
             _player.GetComponentInChildren<SpriteRenderer>().color = color;
-            Debug.Log("Visible");
         }
 
         private static void Invincibility()
         {
-            Debug.Log("Invincibility");
             _player.GetComponent<PlayerController>().IsInvincible = true;
 
             _player.GetComponentInChildren<ParticleSystem>().Play();
@@ -176,19 +177,16 @@ namespace Script.Manager
             _player.GetComponentInChildren<ParticleSystem>().Stop();
             yield return new WaitForSeconds(2);
             _player.GetComponent<PlayerController>().IsInvincible = false;
-            Debug.Log("Killable");
         }
 
         private static void ChangeForce(int value)
         {
-            Debug.Log("Force " + value);
             PlayerController playerController = _player.GetComponent<PlayerController>();
             playerController.Force += value;
         }
 
         private static void ChangeSpeed(float value)
         {
-            Debug.Log("Speed " + value);
             DynamicMovement dynamicMovement = _player.GetComponent<DynamicMovement>();
             dynamicMovement.Speed += value;
         }
@@ -205,7 +203,6 @@ namespace Script.Manager
         public static void TakeWeapon()
         {
             _playerIsArmed = true;
-            Debug.Log(_player);
             _player.GetComponent<PlayerController>().TakeWeapon();
         }
 

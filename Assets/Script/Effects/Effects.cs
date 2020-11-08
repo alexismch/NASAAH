@@ -10,8 +10,6 @@ namespace Script.Effects
         public void ChooseEffect()
         {
             string effect = effectsTable.ChooseEffect();
-            if (effect != null)
-                Debug.Log("Launch effect : " + effect);
             GameManager.SetEffect(effect);
         }
     }
