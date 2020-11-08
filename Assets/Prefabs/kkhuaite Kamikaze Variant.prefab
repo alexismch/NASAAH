@@ -40,7 +40,7 @@ PrefabInstance:
     - target: {fileID: 4319831695310819052, guid: 176f13a897b885f43bce9b8d4bec18b8,
         type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 5176308900301341399, guid: 176f13a897b885f43bce9b8d4bec18b8,
         type: 3}
@@ -50,12 +50,12 @@ PrefabInstance:
     - target: {fileID: 7897053677944643566, guid: 176f13a897b885f43bce9b8d4bec18b8,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 25.571827
+      value: -4.646
       objectReference: {fileID: 0}
     - target: {fileID: 7897053677944643566, guid: 176f13a897b885f43bce9b8d4bec18b8,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -6.540345
+      value: -1.317
       objectReference: {fileID: 0}
     - target: {fileID: 7897053677944643566, guid: 176f13a897b885f43bce9b8d4bec18b8,
         type: 3}

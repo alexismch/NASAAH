@@ -26,22 +26,22 @@ PrefabInstance:
     - target: {fileID: 2917115482071744664, guid: 176f13a897b885f43bce9b8d4bec18b8,
         type: 3}
       propertyPath: m_Name
-      value: kkhuaite Follow Variant
+      value: kkhuaite Follow Variant (26)
       objectReference: {fileID: 0}
     - target: {fileID: 4319831695310819052, guid: 176f13a897b885f43bce9b8d4bec18b8,
         type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 7897053677944643566, guid: 176f13a897b885f43bce9b8d4bec18b8,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.36
+      value: 0.07719803
       objectReference: {fileID: 0}
     - target: {fileID: 7897053677944643566, guid: 176f13a897b885f43bce9b8d4bec18b8,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -20.068077
       objectReference: {fileID: 0}
     - target: {fileID: 7897053677944643566, guid: 176f13a897b885f43bce9b8d4bec18b8,
         type: 3}
