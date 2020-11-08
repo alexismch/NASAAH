@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Script.Manager;
+using UnityEngine;
 using UnityEngine.Serialization;
 
 namespace Script.Effects
