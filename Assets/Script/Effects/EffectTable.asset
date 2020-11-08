@@ -13,17 +13,17 @@ MonoBehaviour:
   m_Name: EffectTable
   m_EditorClassIdentifier: 
   table:
-  - weight: 30
+  - weight: 10
     effect: SpeedBoost
-  - weight: 30
+  - weight: 10
     effect: ForceBoost
-  - weight: 12
+  - weight: 4
     effect: Invincibility
-  - weight: 9
+  - weight: 3
     effect: Invisibility
-  - weight: 21
+  - weight: 7
     effect: SpeedDebuf
-  - weight: 21
+  - weight: 7
     effect: ForceDebuf
   - weight: 1
     effect: InstantDie
