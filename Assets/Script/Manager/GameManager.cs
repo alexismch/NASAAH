@@ -1,9 +1,7 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using Cinemachine;
 using Script.Animation;
 using Script.Controllers;
-using Script.Manager;
 using Script.Pooling;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -17,8 +15,10 @@ namespace Script.Manager
         public ScoreManager ScoreManager => scoreManager;
         private static GameObject _player;
         private static bool _playerIsArmed = false;
+        private static bool _playerAlive = true;
 
         public static bool PlayerIsArmed => _playerIsArmed;
+        public static bool PlayerAlive => _playerAlive;
 
         public static void SetPlayer(GameObject player)
         {
@@ -49,12 +49,12 @@ namespace Script.Manager
                 ScoreManager.SetScore(0);
             scoreManager.IncLvl();
             ObjectPool.ResetPools();
+            _playerAlive = true;
         }
         
         public void LoadScene(string sceneName)
         {
             SceneManager.LoadScene(sceneName);
-            var asyncload = SceneManager.LoadSceneAsync(sceneName);
         }
 
 
@@ -112,6 +112,7 @@ namespace Script.Manager
                 return;
             }
 
+            _playerAlive = false;
             PlayerAnimation.Death();
             _instance.StartCoroutine(KillPlayer());
             Debug.Log("Killed");

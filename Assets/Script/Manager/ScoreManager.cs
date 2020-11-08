@@ -50,7 +50,8 @@ namespace Script.Manager
             {
                 currentScore = 0;
                 GameManager.Instance.EndOfLevel();
-                StartCoroutine(WaitToChangeLevel());
+                if(GameManager.PlayerAlive)
+                    StartCoroutine(WaitToChangeLevel());
             }
         }
 
