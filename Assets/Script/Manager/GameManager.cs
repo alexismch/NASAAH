@@ -47,6 +47,7 @@ namespace Script.Manager
 
         public void NextLevel(string lvl)
         {
+            StopWalk();
             LoadScene(lvl);
             if (!lvl.Equals(scoreManager.GetLevel(0)))
                 ScoreManager.SetScore(0);
