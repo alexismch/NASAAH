@@ -18,7 +18,6 @@ namespace Script.Manager
         private static GameObject _player;
         private static bool _playerIsArmed = false;
         private static bool _playerAlive = true;
-        private static bool _isWalking = false;
 
         public static bool PlayerIsArmed => _playerIsArmed;
         public static bool PlayerAlive => _playerAlive;
@@ -47,7 +46,6 @@ namespace Script.Manager
 
         public void NextLevel(string lvl)
         {
-            StopWalk();
             LoadScene(lvl);
             if (!lvl.Equals(scoreManager.GetLevel(0)))
                 ScoreManager.SetScore(0);
@@ -227,22 +225,6 @@ namespace Script.Manager
         public static void PlaySpawn()
         {
             _instance.GetComponent<SpawnSound>().StartClip();
-        }
-
-        public static void StartWalk()
-        {
-            if (_isWalking)
-                return;
-            _instance.GetComponent<AudioSource>().Play();
-            _isWalking = true;
-        }
-
-        public static void StopWalk()
-        {
-            if (!_isWalking)
-                return;
-            _instance.GetComponent<AudioSource>().Pause();
-            _isWalking = false;
         }
     }
 }
