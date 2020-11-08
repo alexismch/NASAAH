@@ -40,7 +40,8 @@ namespace Script.Manager
         public void NextLevel(string nextLevel)
         {
             LoadScene(nextLevel);
-            ScoreManager.SetScore(0);
+            if (!nextLevel.Equals("Discover"))
+                ScoreManager.SetScore(0);
             ObjectPool.ResetPools();
         }
 
