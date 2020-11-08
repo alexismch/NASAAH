@@ -125,6 +125,8 @@ namespace Script.Manager
             {
                 Debug.Log(o.name);
                 MoveToTarget moveToTarget = o.GetComponent<MoveToTarget>();
+                if(moveToTarget == null)
+                    continue;
                 if (moveToTarget.Target != null && moveToTarget.Target.CompareTag("Player"))
                     moveToTarget.Target = o;
             }
